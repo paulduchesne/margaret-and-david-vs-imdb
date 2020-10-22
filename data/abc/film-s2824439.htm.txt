@@ -1,0 +1,852 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app12.us.archive.org';v.server_ms=544;archive_analytics.send_pageview({});});</script><script charset="utf-8" src="/_static/js/playback.bundle.js?v=BsQ6byDz" type="text/javascript"></script>
+<script charset="utf-8" src="/_static/js/wombat.js?v=cRqOKCOw" type="text/javascript"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.abc.net.au:80/atthemovies/txt/s2824439.htm","20140228024021","https://web.archive.org/","web","/_static/",
+	      "1393555221");
+</script>
+<link href="/_static/css/banner-styles.css?v=NHuXCfBH" rel="stylesheet" type="text/css"/>
+<link href="/_static/css/iconochive.css?v=qtvMKcIJ" rel="stylesheet" type="text/css"/>
+<!-- End Wayback Rewrite JS Include -->
+<title>At the Movies: My Name is Khan</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="At the Movies: My Name is Khan" name="Title"/>
+<meta content="A Muslim suffering Asperger's syndrome is detained by authorities in the US for suspicious" name="Description"/>
+<meta content="24/02/2010" name="Date"/>
+<meta content="English" name="Language"/>
+<meta content="Australian Broadcasting Corporation" name="Publisher"/>
+<meta content="(SCHEME=URL)" name="Publisher"/>
+<meta content="" name="ABC-DateReversed"/>
+<meta content="0" name="ABC-ResourceType"/>
+<meta content="no" http-equiv="imagetoolbar"/>
+<link href="/web/20140228024021cs_/http://www.abc.net.au/atthemovies/css/atm.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/web/20140228024021cs_/http://www.abc.net.au/atthemovies/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+<script src="/web/20140228024021js_/http://www.abc.net.au/tv/cinerama/scripts/swfobject.js" type="text/javascript"></script>
+<script src="/web/20140228024021js_/http://www.abc.net.au/tv/cinerama/scripts/cinerama.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+var theMovie = "My Name is Khan";
+</script>
+<script language="JavaScript" type="text/javascript">
+
+
+var newtopicKey;
+
+//add onload function audShow;
+function addEvent(obj, evType, fn){ 
+ if (obj.addEventListener){ 
+   obj.addEventListener(evType, fn, false); 
+   return true; 
+ } else if (obj.attachEvent){ 
+   var r = obj.attachEvent("on"+evType, fn); 
+   return r; 
+ } else { 
+   return false; 
+ } 
+}
+
+function audShow() {
+	// display word count only if js enabled
+	document.getElementById("wordCount").style.display='inline';
+	document.getElementById("audiencecomment").style.display='block';
+	if (document.getElementById("allnewComments")) {
+		document.getElementById("allnewComments").innerHTML = document.getElementById("loadComments").innerHTML;
+	}
+}
+
+
+function changeAction() {
+	// avoids non-js form submission 
+	var tmpStoryid = "??StoryID??";
+	if (document.m_frmMainForm) {
+		document.m_frmMainForm.action = 'https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;tn='+tmpStoryid+'&amp;dm=1&amp;tpa=&amp;r=&amp;layout=popup';
+		}
+}
+
+addEvent(window, 'load', audShow);
+addEvent(window, 'load', changeAction);
+addEvent(window, 'load', formatComments);
+
+
+function formatComments() {
+	// replace H3 tag with 'Name:' + name
+	var arrayH3 = document.getElementById("comments").getElementsByTagName("h3");
+	for (var i = 0; i < arrayH3.length; i++) {
+		var theString = arrayH3[i].innerHTML;
+		theString = theString.replace(":", "");
+		theString = "Name: "+theString;
+		arrayH3[i].innerHTML = 	theString;
+	}
+	// add rating value to each comment
+	var arrayComment = getElementsByClassName( 'comment', 'p' );	
+	for (var c = 0; c < arrayComment.length; c++) {
+		var theComment = arrayComment[c].innerHTML;
+		theComment = theComment.replace("[[", "<span class='userRating'>Rating: <img src='https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/audience/stars").replace("]]",".gif' alt='rating'></span>").replace("((", "<!-- ").replace(")))", "))").replace("))", "-->");
+		arrayComment[c].innerHTML = theComment;
+	}
+
+	
+}
+
+
+function formCheck(zeForm) {
+	// pass key to form
+	document.getElementById("keyField").value = newtopicKey;
+	// basic validation
+	if (document.getElementById("yname").value.length < 1) {
+		alert("Please enter your name or nickname.");
+		document.getElementById("yname").style.background='#FFFDC8';
+		return false;
+	}
+	if (document.getElementById("yemail").value.length < 6) {
+		alert("Please enter a valid email address.");
+		document.getElementById("yemail").style.background='#FFFDC8';
+		return false;
+	}
+	if (zeForm.score.options[0].selected && zeForm.score.options[0].value=="na") {
+		alert("You forgot to rate the movie!");
+		document.getElementById("score").style.background='#FFFDC8';	
+		return false;
+	}	
+	// check for http
+	spamcheck=zeForm.m_tbxText.value;
+	if (spamcheck.indexOf("http")!=-1) {
+		document.m_frmMainForm.action = 'https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/audience/blank.htm';
+	}
+	// check word count
+	wct = cnt(zeForm.m_tbxText.value);
+	if (wct > 100) {
+		alert("Comments are limited to 100 words. You've written "+wct+" words!");
+		document.getElementById("remark").style.background='#FFFDC8';
+		return false;	
+	}
+	
+	// replace usual suspect bad characters 
+	badChars = Array  ('…', '—', '–', '“', '”', 'ö', 'é', 'è', 'ñ', 'â', ' ', '’','‘','´');
+	goodChars = Array ('...', '-', '-', '"', '"', 'o', 'e', 'e', 'n', 'a', ' ', '\'','\'','\'');
+	fld = document.getElementById("remark");
+	for(i=0;i<badChars.length;i++){
+		restring = new RegExp( badChars[i] , 'g');
+		fld.value = fld.value.replace(restring,goodChars[i]);
+	}
+	fldn = document.getElementById("yname");
+	for(j=0;j<badChars.length;j++){
+		restringj = new RegExp( badChars[j] , 'g');
+		fldn.value = fldn.value.replace(restringj,goodChars[j]);
+	}	
+	
+	// add rating to comment field in [[ ]] tags 
+	var theSel = zeForm.score.selectedIndex;
+	var theRating = zeForm.score[theSel].value; 
+	zeForm.m_tbxText.value = "[["+theRating+"]]\n" + zeForm.m_tbxText.value;
+	
+	// add movie title to comment field in (( )) tags 
+	zeForm.m_tbxText.value = "(("+theMovie+"))" + zeForm.m_tbxText.value;	
+	
+	// display thankyou div layer and hide form. 
+	document.getElementById("favFormThx").style.display='block';
+	document.getElementById("favForm").style.display='none';
+	document.getElementById("wordCount").style.display='none';	
+	
+	// all clear, submit the form
+	return true;
+}
+
+// word count function
+function cnt(theform){
+	var y=theform;
+	var r = 0;
+	a=y.replace('\n',' ');
+	a=a.split(' ');
+	for (z=0; z<a.length; z++) {if (a[z].length > 0) r++;}
+	return r;
+}
+
+function remainingWords(textAreaContent,textAreaContentValue, maxWords) 
+{
+	// Determine the number of words we have left
+	var numberofwords = cnt(textAreaContentValue);
+	wordsLeft = maxWords - numberofwords;
+	if (wordsLeft < 1)
+	{	// if 100 change color to red
+		document.getElementById("wcNum").style.color='red'; 
+	} else {
+		document.getElementById("wcNum").style.color='#330000'; 
+	}
+	// update word count number
+	document.getElementById("wcNum").innerHTML=(0+numberofwords);
+}
+
+// windows media alt box
+function showWindows() {
+	document.getElementById("windowsMed").style.display='block';
+}
+
+
+// generic get by class name
+function getElementsByClassName(strClass, strTag, objContElm) {
+  strTag = strTag || "*";
+  objContElm = objContElm || document;    
+  var objColl = objContElm.getElementsByTagName(strTag);
+  if (!objColl.length &&  strTag == "*" &&  objContElm.all) objColl = objContElm.all;
+  var arr = new Array();                              
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';   
+  var arrClass = strClass.split(delim);    
+  for (var i = 0, j = objColl.length; i < j; i++) {                         
+    var arrObjClass = objColl[i].className.split(' ');   
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    for (var k = 0, l = arrObjClass.length; k < l; k++) {
+      for (var m = 0, n = arrClass.length; m < n; m++) {
+        if (arrClass[m] == arrObjClass[k]) c++;
+        if ((delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+          arr.push(objColl[i]); 
+          break comparisonLoop;
+        }
+      }
+    }
+  }
+  return arr; 
+}
+
+// called from 'new discussion' page in iframe
+function sayHello(theKey) {
+	newtopicKey = theKey;
+}
+
+// talk to www2b iframe
+document.domain = "abc.net.au";
+
+</script>
+<style type="text/css">
+.hideorshow-review {display:none}
+.hideorshow-review {display:block;}
+
+#review2009 form {display:none}
+#msgClosed {display:none;font-weight:bold;font-style:italic}
+#review2009 #msgClosed {display:block}
+#reviewOld #revForm, #reviewOld #reviewForm {display:none}
+#reviewOld #wordCount {display:none}
+#reviewOld #msgClosed {display:block}
+
+#audiencecomment,#comments h2,#comments p,#comments p.links,#comments a {display:none}
+#comments p.date,#comments p.comment {display:block}
+#comments ul {margin:0 0 0 15px;padding:0;text-indent:0}
+#comments ul li {position:relative;width:360px;margin:0 !important;padding:10px;overflow:hidden;text-indent:0 !important;background:#f0d5b7;border:1px solid #d6b470;list-style:none}
+#comments ul li p.date {position:absolute;top:0px;right:0px;font-weight:normal;font-size:11px;letter-spacing:1px;font-style:italic;color:#a4775b}
+#comments li h3 {padding:0 0 4px 0;margin:0;color:#330000;}
+
+#comments p.comment {margin:0;font-size:13px}
+span.userRating {display:block;color:#330000;font-weight:bold;font-size:13px}
+#loadComments {display:none}
+</style>
+</head>
+<body>
+<div id="globalnav">
+<!--noindex-->
+<!-- ABC nav: Global Nav [/includes/globlnav.inc] -->
+<style type="text/css"><!--
+		@import url("https://web.archive.org/web/20140228024021cs_/http://www.abc.net.au/includes/css/globalNav.css");
+	--></style>
+<div id="abcNav">
+<div id="abcNavWrapper">
+<form action="https://web.archive.org/web/20140228024021/http://search.abc.net.au/search/search.cgi" id="abcNavSearch" method="get">
+<input name="form" type="hidden" value="simple"/>
+<input name="num_ranks" type="hidden" value="20"/>
+<input name="collection" type="hidden" value="abcall"/>
+<label for="abcNavQuery">Search:</label>
+<input id="abcNavQuery" maxlength="30" name="query" size="20" type="text" value="Keywords"/>
+<input id="abcNavSubmit" title="ABC Search" type="submit" value=" ABC Search "/>
+</form>
+<ul id="abcNavMenu">
+<li id="abcNavHome"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/" title="ABC Home"><img alt="ABC Home" height="16" src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/res/abc/logos/nav_logo.png" width="61"/></a></li>
+<li id="abcNavRadio"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/radio/">Radio</a></li>
+<li id="abcNavTV"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/tv/">TV</a></li>
+<li id="abcNavShop"><a href="https://web.archive.org/web/20140228024021/http://shop.abc.net.au/">Shop</a></li>
+<li id="abcNavNews"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/news/">News</a></li>
+<li id="abcNavSport"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/sport/">Sport</a></li>
+<li id="abcNavLocal"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/local/">Local</a></li>
+<li id="abcNavKids"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/children/">Children</a></li>
+<li id="abcNavScience"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/science/">Science</a></li>
+<li id="abcNavEnvironment"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/environment/">Environment</a></li>
+<li id="abcNavTopics"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/topics.htm">more Topics</a></li>
+<li id="abcNavHelp"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/help/">help</a></li>
+</ul>
+</div>
+</div>
+<script src="https://web.archive.org/web/20140228024021js_/http://www.abc.net.au/includes/scripts/global.js" type="text/javascript"></script>
+<noscript>
+<img alt="" height="1" id="DCSIMG" src="https://web.archive.org/web/20140228024021im_/http://statse.webtrendslive.com/dcsg85fae000004n0vfjpj8oa_9m4q/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" style="border:0;" width="1"/>
+</noscript>
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script src="//web.archive.org/web/20140228024021js_/http://secure-au.imrworldwide.com/v60.js" type="text/javascript"></script>
+<script type="text/javascript">
+		var pvar = { cid: "abc-aust", content: "0", server: "secure-au" };
+		var trac = nol_t(pvar);
+		trac.record().post();
+	</script>
+<noscript>
+<div>
+<img alt="" height="1" src="//web.archive.org/web/20140228024021im_/http://secure-au.imrworldwide.com/cgi-bin/m?ci=abc-aust&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1"/>
+</div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+<!-- end ABC nav -->
+<!--endnoindex-->
+</div>
+<!-- END GLOBALNAV //-->
+<div id="outerWrap"></div>
+<div id="banner">
+<a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/" target="_top"><img alt="At the Movies" class="title" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/1p.gif"/></a>
+<div id="masthead">
+<em>Tuesdays 9:30pm ABC1</em><!--&nbsp;&nbsp;&nbsp;Sat 8pm <em>ABC2</em>-->
+</div>
+<!-- END MASTHEAD //-->
+<div id="search">
+<form action="https://web.archive.org/web/20140228024021/http://search.abc.net.au/search/search.cgi" method="GET" name="simple">
+<input name="form" type="hidden" value="simple"/>
+<input name="scope" type="hidden" value="atthemovies"/>
+<input name="num_ranks" type="hidden" value="20"/>
+<input name="collection" type="hidden" value="tv"/>
+Search <!--Search by <input type="radio" name="meta_a" value="review">review&nbsp;<input type="radio" name="meta_a" value="interview">interview--> <input id="searchbox" name="query" size="14" title="Search At the Movies" type="text" value=""/> <input id="searchbutton" title="Search At the Movies" type="submit" value="Go"/></form>
+</div>
+<!-- END SEARCH //-->
+<div id="functions"><a href="/web/20140228024021/http://www.abc.net.au/cgi-bin/common/mailto/mailto-nojs_query.pl?http://www.abc.net.au/atthemovies/txt/s2824439.htm" title="Email this page to a friend">Send to a friend</a></div>
+<!-- END FUNCTIONS //-->
+</div>
+<!-- END BANNER //-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="contentcontainer" summary="Layout table used to contain content">
+<caption class="hidden">
+<a href="/web/20140228024021/http://www.abc.net.au/atthemovies/">At the Movies</a>
+</caption>
+<tbody>
+<tr>
+<td class="featurecontainer"><div id="sitenav">
+<ul>
+<li><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/">Home</a></li>
+<li class="selected"><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/review/">Movie Reviews</a></li>
+<li><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/interview/">Interviews</a></li>
+<li><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/classic/">The Classic</a></li>
+<li><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/news/">Movie News</a></li>
+<li><a href="/web/20140228024021/http://www.abc.net.au/tv/geo/atthemovies/">Download Video</a></li>
+<!-- <li><a href="/atthemovies/movieupdates/">Mailing list</a></li> -->
+<!--<li><a href="/atthemovies/events/">Movie events</a></li>
+<li><a href="/atthemovies/extras/">Extras</a></li>-->
+<li><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/about/">About the Show</a></li>
+<li><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Board.aspx?b=19">Message Board</a></li>
+<!--<li><a href="/atthemovies/contact/">Contact Us</a></li>-->
+<!--<li><a href="/atthemovies/tributes/">Tributes</a></li>-->
+<!--<li><a href="/atthemovies/25years/competition.htm">Competition</a></li>-->
+<li><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/votecentral/Client/PlaceVote.aspx?E=19">Viewers Poll</a></li>
+</ul>
+</div>
+<!-- END SITENAV //-->
+<div id="mbextract">
+<h3 id="yoursay"><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Board.aspx?b=19"><span class="hidden">Your Comments</span></a></h3>
+<div style="padding:0px 3px 0px 9px">
+<p style="margin-bottom:10px"><span style="font-weight:bold;color:#94E6E6"><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Message.aspx?b=19&amp;m=23042&amp;ps=20&amp;dm=2">Re: Last Vegas</a></span><br/>dfle3 says:<br/>"Personally I'd find it more interesting to find out which movie has one an Award for EVERY acting ..." <a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Message.aspx?b=19&amp;m=23042&amp;ps=20&amp;dm=2"><em>More»</em></a>
+</p><p style="margin-bottom:10px"><span style="font-weight:bold;color:#94E6E6"><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Message.aspx?b=19&amp;m=23041&amp;ps=20&amp;dm=2">Re: Last Vegas</a></span><br/>Fritter says:<br/>"Good work, as usual. Yes, I was thinking Acting Oscar winners in the same film, having already won ..." <a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Message.aspx?b=19&amp;m=23041&amp;ps=20&amp;dm=2"><em>More»</em></a>
+</p>
+</div>
+</div>
+<!-- END TMBEXTRACT //-->
+</td>
+<td><!-- PRINT_CONTENT_START -->
+<div id="content">
+<div id="storyImage">
+<!-- video block -->
+<noscript><h1>My Name is Khan</h1></noscript>
+<div style="margin-left:3px"><a class="singleClip" href="https://web.archive.org/web/20140228024021/rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/atthemovies/20100224_mynameiskhan.flv" style="background:#000000;color:#b96125" title="Javascript and flash 9 required to view this link."><img alt="My Name is Khan" height="224" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/2010/ep03/mynameiskhan_large.jpg" style="border:0px" width="400"/></a></div></div></div></td></tr></tbody></table></body></html>
+<noscript>
+<br/><span style="color:#ffffff">Flash Player 9 and JavaScript is required to view video in the page.</span></noscript>
+<!-- // video block -->
+<p class="description">A Muslim suffering Asperger's syndrome is detained by authorities in the US for suspicious behaviour...</p>
+<p class="score" style="border:0;"> Margaret: <img alt="three-and-a-half stars" class="rating" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/bthree-and-a-half.gif"/> </p>
+
+<h3>My Name is Khan</h3>
+<p class="ratd"> Rated <em>M</em></p>
+<p><em>Review by Margaret Pomeranz</em></p>
+<p>MY NAME IS KHAN is a Indian film that we didn't review when it was first released because there were no previews. It's had a simultaneous release around the world and is breaking box office records for a Hindi film. <br/><br/>Set mainly in America where Rizwan Khan - played by Bollywood superstar SHAHRUKH KHAN - moved with his mother to live with his brother. Rizwan is autistic, he has Asperger's Syndrome but that doesn't prevent him establishing a lovely relationship with single mother Mandira - Kajol...<br/><br/>The film is nearly three hours long, with a ten minute intermission. The first part is really the romance that develops between Rizwan and Mandira, the second part moves into darker territory as Rizwan, a Muslim, and his family experience the backlash caused by 9/11.<br/><br/>Directed by the very successful Karan Johar, the film is shamelessly manipulative, a real tear jerker, it certainly jerked them out of me. Kajol is lovely as Mandira and Shahrukh Khan is affecting as the Asperger's-affected hero on a mission to meet the President of the United States. <br/><br/>It is very like Forrest Gump; its message, which is that people are either good or bad, regardless of their ethnicity or religion, comes through loud and clear. The music, such a feature of Indian cinema is terrific, is largely on the soundtrack, with no big song and dance numbers. <br/><br/>I'd give the film 3 and a half stars.</p>
+<div class="hideorshow-review" id="review2010">
+<noscript><p><br/><br/><strong>To leave a comment, you'll need to enable javascript in your browser</strong></p></noscript>
+<div id="audiencecomment">
+<h3>Your rating: My Name is Khan</h3>
+<div id="msgClosed">Comments have closed for this movie</div>
+<form action="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/audience/blank.htm" id="reviewForm" method="post" name="m_frmMainForm" onsubmit="return formCheck(this)" target="revThanks">
+<input name="__EVENTTARGET" type="hidden" value="">
+<input name="__EVENTARGUMENT" type="hidden" value="">
+<input id="keyField" name="__VIEWSTATE" type="hidden" value="">
+<div id="favFormThx"> <strong>Thank you.</strong><br/>
+<br/>
+ Your comment and rating will appear below once approved. <br/>
+<br/>
+ To review or discuss this movie in more detail,<br/>
+ please use the <a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/Client/Board.aspx?b=19" style="color:#CC6600"><strong>message board</strong></a>. </div>
+<table border="0" cellpadding="0" cellspacing="0" id="favForm">
+<tr>
+<td class="gbkSubhead">Name:<br/>
+<span class="smlTxt">(or nickname)</span></td>
+<td>
+<input id="m_ucIdentity_m_hdnHasSpecialIdentity" name="m_ucIdentity:m_hdnHasSpecialIdentity" type="hidden" value="True">
+<input class="favField" id="yname" name="m_ucIdentity:m_tbxHandle" onfocus="this.style.background='#FFF6E9'" size="45" type="text"/>
+</input></td>
+</tr>
+<tr>
+<td class="gbkSubhead">Email:</td>
+<td><input class="favField" id="yemail" name="m_ucExtraPostDataFieldInput1:m_tbxField" onfocus="this.style.background='#FFF6E9'" size="45" type="text"/></td>
+</tr>
+<tr>
+<td class="gbkSubhead">Rating:</td>
+<td><select id="score" name="score" onfocus="this.style.background='#FFF6E9'" style="margin:0">
+<option value="na">Select...</option>
+<option value="0">Zero stars</option>
+<option value="1">Half a star</option>
+<option value="2">One star</option>
+<option value="3">One and a half stars</option>
+<option value="4">Two stars</option>
+<option value="5">Two and a half stars</option>
+<option value="6">Three stars</option>
+<option value="7">Three and a half stars</option>
+<option value="8">Four stars</option>
+<option value="9">Four and a half stars</option>
+<option value="10">Five stars</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="gbkSubhead" valign="top">Comment:<br/>
+<span class="smlTxt">(max 100 words)</span> </td>
+<td><textarea class="favField" id="remark" name="m_tbxText" onfocus="this.style.background='#FFF6E9'" onkeyup="remainingWords(this, this.value, 100)"></textarea>
+<p style="margin:0"><a href="/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s1224754.htm" style="color:#A0410F">Conditions of use »</a></p></td>
+</tr>
+<tr>
+<td align="right" colspan="2" height="37">
+<input class="gbkbutton" name="m_btnPost" onmouseout="this.style.background='#FFD495'" onmouseover="this.style.background='#FFEDD2'" type="Submit" value="Post comment"/>
+</td>
+</tr>
+</table>
+</input></input></input></form>
+<iframe frameborder="0" height="0" name="revThanks" scrolling="no" src="/web/20140228024021if_/http://www.abc.net.au/atthemovies/audience/blank.htm" title="blank" width="375"></iframe>
+<iframe frameborder="0" height="0" name="2bframe" scrolling="no" src="https://web.archive.org/web/20140228024021if_/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;tn=2824439&amp;dm=1&amp;tpa=&amp;r=&amp;layout=popup" title="2b" width="375"></iframe>
+<div id="wordCount"> Word count<br/>
+<div id="wcNum">0</div>
+</div>
+</div>
+<!-- // audiencecomment -->
+<div id="allnewComments">
+</div>
+<div id="allComments">
+<div class="MYNAMEISKHAN"><em class="dd">17/03/2010 11:33 AM</em><em>Name</em>: vunit<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars0.gif"/><br/><em>Comment</em>: the worst problem with indian audiences is that most of them haven't seen hollywood productions. so when, year after year, indian directors shamelessly 'steal' hit hollywood scripts and make them into hindi movies, most people think of them as originals. shameless actors play game. big stars, that is. <br/>this is a forrest gump rip-off, everyone knows that. what i think is the saddest aspect of this, is that there are a billion people in india - not much originality. i don't believe that there are no writers in india. they need to be given a chance. </div><div class="MYNAMEISKHAN"><em class="dd">8/03/2010 1:25 PM</em><em>Name</em>: nancy<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars0.gif"/><br/><em>Comment</em>: horrible horrible movie. it has a very lose plot and acting is loud and failed to convince. heightened emotions with 9/11 as a backdrop and few songs thrown in for entertainment made this movie look stupid.  Forestgump-ish rizwan helpin out ppl from disaster, that hurricane bit is RIDICULOUS. climax is shady.<br/>male lead should have controlled his  expressions a bit.  i was yawing after 35 minutes in the cinema. it could have been easily trimmed down to half hour mayb. lol.<br/>all in all, bad bollywood experience.  </div><div class="MYNAMEISKHAN"><em class="dd">8/03/2010 12:23 AM</em><em>Name</em>: Mirwais<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: it is such a great film, beautifully acted by Shahrukh Khan and the storyline is very attention grabbing. The movie promotes peace and humanity and there are a lot of good hidden messages in the movie. some of which are that in this world, either you are a good person or a bad person, religion is not the criteria, humanity is. A person should not be targetted based on their name and religion.  Terrorism has no religion and that should be clear. <br/><br/>We must repair the world with love which is what the film is trying to say. </div><div class="MYNAMEISKHAN"><em class="dd">7/03/2010 9:01 PM</em><em>Name</em>: Hardy<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: sensationally emotive,thoughtprovoking and it makes you glad to be human.<br/>It is one of my favourite movies and I hope that word of mouth keeps this movie in the cinemas longer then planned as I want to take some of my friends and family to see this movie. </div><div class="MYNAMEISKHAN"><em class="dd">7/03/2010 1:38 PM</em><em>Name</em>: Chris<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars7.gif"/><br/><em>Comment</em>: Really enjoyed the 1st three-quarters of the movie but it lost a little with me towards the end when Khan became 'Forrest Gump-ish' in his global appeal. Great overall appeal that should have had more screens from a greater box-office, for the overall message from the movie was undeniable.  </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 7:06 PM</em><em>Name</em>: jasleenkk<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: its amazing and srk rockks </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 7:02 PM</em><em>Name</em>: akshay jain<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: mind blowing, best performance of srk </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 8:41 AM</em><em>Name</em>: Raj<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Beautiful movie! Beautiful message! AWESOME Shah Rukh!!!  </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 8:33 AM</em><em>Name</em>: Emily<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: One of the most influential and moving movies I have ever seen. I consider myself lucky to have viewed this piece of cinema. Thank you! to all the people who worked hard to produce such a classic </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 6:11 AM</em><em>Name</em>: Muhammad Teli<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: One of the bestest movie , i have ever seen. Standing ovation to Mr.SRK.. I'll watch this movie again and again and again.. MUST WATCH !!! </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 2:44 AM</em><em>Name</em>: sejan<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: its awesome </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 1:47 AM</em><em>Name</em>: faisal baloch<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: i really liked the movie how beautifully done by karan SRK is awessom kajol is done well as always  </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 1:09 AM</em><em>Name</em>: Sneha<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars6.gif"/><br/><em>Comment</em>: Pathetic review. Is it called a review in the first place? It's only got things that we already know! And, most importantly... the film's msg is not- people are either good or bad!! Itg got several msg's the main being that every Musim is not a terrorist and Khan says so with hidden acrimony. </div><div class="MYNAMEISKHAN"><em class="dd">6/03/2010 12:04 AM</em><em>Name</em>: kiran<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: great movie of all times.....MINDBLOWING ACTING BY SRK.... </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 10:37 PM</em><em>Name</em>: Sophie<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: I love this film...the best I have ever seen, but I can't be objective about it....SRKajol movies are the best </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 8:54 PM</em><em>Name</em>: Kazi Shaheed Rahman<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Superb </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 7:36 PM</em><em>Name</em>: manohar<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars8.gif"/><br/><em>Comment</em>: i just love the movie..its awesome...!!! <br/>srk' s acting is best... best work till date... </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 6:53 PM</em><em>Name</em>: Uzma Kazmi<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Excellent performance by SRK &amp; Kajol, best movie directed by Karan Johar. </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 6:16 PM</em><em>Name</em>: rubina<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: I love srk  GOD BLESS HIM </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 6:02 PM</em><em>Name</em>: Tanvi Singh<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: shahrukh khan rocks forever &amp; wid karan and kajol it's cherry on d cake..movie was supercalifragilisticexpialidocious..luv shahrukh soooooooooooooo much.. </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:50 PM</em><em>Name</em>: nishad ibrahim tp<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: its the best movie i ever seen..................................... </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:48 PM</em><em>Name</em>: hasy<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: way of showing good is always heavy on side of evil was awesome . srk u rocked man.thumbs up </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:38 PM</em><em>Name</em>: Karen S.<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: This movie is a parable about love and tolerance, and it is chock full of thought-provoking themes such as prejudice, extremism, good vs. evil, and many more.  I thought it was fascinating to see many aspects of the US from the perspective of an indian film.  Shahrukh Khan's role as a person with Asperger's syndrome was a great mechanism to put very complex issues into a surprisingly simple light, and it's also a major advance for advocacy for people with autism.  The music is gorgeous too!   </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:28 PM</em><em>Name</em>: EKTA SHARMA<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: amazing acting by shahrukh khan...movie was actually showing the mirror to american society and western culture against their weired perception towards muslims...it made me go laugh, cry and love it.  </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:25 PM</em><em>Name</em>: ct-kama<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: wonderful movie and very touched..;D </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:13 PM</em><em>Name</em>: huda<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: wonderful movie, with great acting, direction &amp; story, could anyone ask for more?<br/>the length was perfect, as the various parts contribute to the whole point, the only meaningful difference between people is always their actions, not race nor religion.<br/>wonerfuly told :) </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 5:04 PM</em><em>Name</em>: karunakar<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars7.gif"/><br/><em>Comment</em>: Is this movie appealing only to ppl who have travelled abroad atleast once?It was my experience with my familynfriends.<br/><br/>Tears ran down while i was watching the movie without my knowledge.I was so involved and moved with Rizwan Khan's acting. <br/>Ppl walking towards the flood victims while Rizwan is busy helping is my fav scene.<br/>I dont deny the fact that they are few logics missng as in like fbi unable to solve the mandira son's death mystery, openly speaking abt terrorism in a place with a new person(rizwan)joining the group etc.<br/>But on the whole it is a fantastic movie. </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 4:03 PM</em><em>Name</em>: Sandi<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Everyone who sees this movie again (and again and again) loves it more every time....Do yourself a favour and go see it again.  I expect a higher rating then! </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 3:23 PM</em><em>Name</em>: Elizabeth <br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: I love this movie!! I was not sure I would like a Bollywood movie but it was great!! It was long but worth every second and I enjoyed every second of it. People should be more diverse and watch movies besides Hollywood. Shahrukh Khan was great, Karan Johar great message!! </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 2:56 PM</em><em>Name</em>: jefferson<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: srk the king of world superb movie of all time i think it is the shahrukh;s best </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 2:36 PM</em><em>Name</em>: jash hawai<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: fantastic and one of the best movie..... </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 2:03 PM</em><em>Name</em>: sandy<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Awesome movie, portrays reality. Excellent work by Sharukh khan and karan johar. The best movie which touched my heart. Truly deserves an Oscar! </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 1:32 PM</em><em>Name</em>: Poonam Harsh<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: Beautiful story,acted very well by Kajol and Sharukh also Sameer (kid). But got so much mixed up.Wished Karan didn't try to mix Katrina in Wilmington NC with such a fantastic theme.overall it touched every heart trough Rizwan, didn't need more bollywood style.beautiful songs.<br/>Keep up the good work Karan. </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 12:25 PM</em><em>Name</em>: usman<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: great movie..awesum performance by shahrukh khan..all time great movie. </div><div class="MYNAMEISKHAN"><em class="dd">5/03/2010 11:37 AM</em><em>Name</em>: mukter<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: After long time we saw  good movies  and     S.R.K  AND KAJOL always best..MAY ALLAH BLESS BOTH OF YOU....  </div><div class="MYNAMEISKHAN"><em class="dd">4/03/2010 9:57 PM</em><em>Name</em>: sid<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: fabulous!!! </div><div class="MYNAMEISKHAN"><em class="dd">4/03/2010 7:48 PM</em><em>Name</em>: rabina_shrestha19@yahoo.com<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: this is beautiful  </div><div class="MYNAMEISKHAN"><em class="dd">4/03/2010 8:32 AM</em><em>Name</em>: Barbara Burton<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars8.gif"/><br/><em>Comment</em>: I was deeply moved by this film. Sharukh Khan inhabits the autism role and we saw the world through his eyes. I would love to know what David thought about My Name is Khan. </div><div class="MYNAMEISKHAN"><em class="dd">2/03/2010 8:20 PM</em><em>Name</em>: Zac<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: One of the best movie experiences I have had. Wow, what a wonderful movie. I paid full price to watch this and it was worth every cent and more. <br/><br/>Hollywood could not make a movie this. Please do not compare it to Forrest Gump, it is nothing like it, I don't see how you could.  <br/><br/>Oh, and the movie length was perfect.<br/><br/>I hope more people will experience movies outside Hollywood.   </div><div class="MYNAMEISKHAN"><em class="dd">2/03/2010 1:24 PM</em><em>Name</em>: shiv<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: good movie </div><div class="MYNAMEISKHAN"><em class="dd">1/03/2010 2:19 PM</em><em>Name</em>: Rashmi<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: I think Margaret totally missed the point of this movie.<br/>"My Name is Khan"..shows how people jump to conclusions about a religion without even thinking that each religion has its long history, sacred values and much more.<br/>It portrays how a minority of the population reacts spontaneously to news headlines, some with violence (racial attacks) and some with menace without violence, as they fear their motherland are being occupied by non-trustworthy people, who can harm their future. This also extends the fact how a small minority can unfortunately be seen as a majority by the outside world.<br/>A must see .. </div><div class="MYNAMEISKHAN"><em class="dd">28/02/2010 9:24 PM</em><em>Name</em>: Rashmi<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: I wonder if Margaret actually watched the movie and got the POINT. <br/>"My Name is Khan".. shows how people jump to conclusions about a religion without even thinking that each religion has its long history, sacred values and much more<br/>It portrays how a minority of the population reacts spontaneously to news headlines, some with violence (racial attacks) and some with menace without violence, as they fear their motherland are being occupied by non-trustworthy people, who can harm their future. This also extends the fact how a small minority can unfortunately be seen as a majority by the outside world. </div><div class="MYNAMEISKHAN"><em class="dd">26/02/2010 9:37 AM</em><em>Name</em>: Anita Chaudhary<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: I believe MY NAME IS KHAN is a fascinating love story, has an angle of religion and a world-shaking incident as a backdrop. It not only entertains, but also mesmerises, enthrals and captivates the viewer in those 2.40 hours. At the same time, a film like MY NAME IS KHAN is sure to have a far-reaching influence due to its noble theme.<br/>Shah Rukh's performance has little subtlety about it - for that watch Hugh Dancy doing Asperger's in Adam - but it is heartfelt, endearing and more controlled than anything he's ever done before.  </div><div class="MYNAMEISKHAN"><em class="dd">26/02/2010 5:13 AM</em><em>Name</em>: KHAN<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars4.gif"/><br/><em>Comment</em>: I LIKE  KHANS  MY NAME IS KHAN  </div><div class="MYNAMEISKHAN"><em class="dd">26/02/2010 1:32 AM</em><em>Name</em>: Usama Wajhi<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: it was really a great movie... specially SRK's acting was really awsum....  </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 5:56 PM</em><em>Name</em>: Nithin Muraleedharan<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: INDEED! BUT THIS FILM IS A MASTERPIECE. YOU CANNOT COMPARE IT WITH FORREST GUMP IN ANY WAY OR SO. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 5:37 PM</em><em>Name</em>: decobroad<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars7.gif"/><br/><em>Comment</em>: Thank you Margaret for reviewing this film. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:44 PM</em><em>Name</em>: bgp70<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: This is a superb performance by Shah Rukh Khan and also by Kajol, both showing clearly their skills as actors.  If you have watched SRK's career, and the variety of roles he has taken on, you will appreciate his versatility, as well as great screen presence </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:15 PM</em><em>Name</em>: Abshar<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: Abselutely awsome mind blowing!!!!!!!!!!!! </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 2:00 PM</em><em>Name</em>: kamala<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars9.gif"/><br/><em>Comment</em>: I do agree.  </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 1:12 PM</em><em>Name</em>: Rosemary<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars8.gif"/><br/><em>Comment</em>: I really enjoyed the movie and have seen it two times already. I hope to see it again before it leaves the theaters. The acting was great though I thought the second half a tad too long but definitely worth seeing. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 12:16 PM</em><em>Name</em>: Khan<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: This the best movie. Everyone must watch this movie. This is the best movie ever. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 10:22 AM</em><em>Name</em>: rocky<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars1.gif"/><br/><em>Comment</em>: srsly dude...<br/><br/>I think you were thinkin of Forest Gump when you rate this movie. it sucks big time. TEAR jerker???hahaha. r yu kiddin me?? it was horrible to sit through the whole movie. and what msg?? even a 10 year old kid knws that every religion or  country has good and bad ppl. BLUEK!! <br/><br/>btw im INDIAN. you should  watch lot more movies, I think you just rated it for sake of it, so you dont sound biased.  </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 10:07 AM</em><em>Name</em>: Liljohn<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars1.gif"/><br/><em>Comment</em>: Worst and stupid and waste of time Movie<br/>You waste your money<br/>I wood rather go and watch "3 IDIOTS". </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 8:13 AM</em><em>Name</em>: bollywood dreams<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars7.gif"/><br/><em>Comment</em>: The second half was less statisfying than the first. because the push for global messages became too obvious and unweildy. Nevertheless very good performances from Shah Rukh Khan and Kajol make it viewable. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 7:39 AM</em><em>Name</em>: Harry Bains<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: This movie should be a 5 star!<br/>the message is really important and the performances are perfect. This is the best SRK movie i have ever seen. The music is over the top excellent!  </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:54 AM</em><em>Name</em>: senthil<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: very nice movie.tells our culture </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:43 AM</em><em>Name</em>: Angela<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: The Movie is so touchy. It has a great message of love. I recommend everyone to watch it. One of the best movies of Bollywood. </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:25 AM</em><em>Name</em>: muhammad shahid <br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: all love MNIK , srk is king of super stars<br/>not only of INDIA </div><div class="MYNAMEISKHAN"><em class="dd">25/02/2010 4:00 AM</em><em>Name</em>: ram<br/> <em>Rating</em>: <img src="https://web.archive.org/web/20140228024021im_/http://www.abc.net.au/atthemovies/audience/stars10.gif"/><br/><em>Comment</em>: a biggest hit of bollywood<br/>srk is the king </div>
+</div>
+</div>
+<!-- // hideorshow-review -->
+
+<!-- PRINT_CONTENT_END -->
+<td class="sidebarcontainer"><div id="related">
+<div class="hideorshow-review">
+<h3>Production details</h3>
+<p class="moviedetails"> <strong>Release date:</strong> 11/02/2010<br/>
+<strong>Release details:</strong> Wide national release. Check newspapers for screening dates.<br/>
+<strong>Classification:</strong> M<br/>
+<strong>Duration:</strong> 161 mins<br/>
+<strong>Genre:</strong> Drama, Romance<br/>
+<strong>Director:</strong> Karan Johar<br/>
+<strong>Lead actor:</strong> Shah Rukh Khan<br/>
+<strong>Cast:</strong> Kajol, Katie Amanda Keane, Kenton Duty, Benny Nieves, Christopher B Duncan, Jimm Shergill, Sonya Jehan<br/>
+<strong>Producer:</strong> Hiroo Yash Johar and Gauri Khan<br/>
+<strong>Screenplay:</strong> Shibani Bathija<br/>
+<strong>Music:</strong> Shankar Ehsaan Loy<br/>
+<strong>Distributor:</strong> 20th Century Fox<br/>
+<strong>Country:</strong> India<br/>
+<br clear="all"/>
+   </p>
+</div>
+<h3 class="reviews">Movies and interviews from 24 February 2010</h3>
+<table border="0" cellpadding="0" cellspacing="0" class="sideRating">
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2820906.htm">The Blind Side</a></td></tr>
+<tr><td>Margaret</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr> <tr><td>David</td><td><img alt="two-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rtwo-and-a-half.gif"/></td></tr>
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2820910.htm">A Single Man</a></td></tr>
+<tr><td>Margaret</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr> <tr><td>David</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr>
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2820912.htm">The Men Who Stare at Goats</a></td></tr>
+<tr><td>Margaret</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr> <tr><td>David</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr>
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2820916.htm">Love Happens</a></td></tr>
+<tr><td>Margaret</td><td><img alt="three stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree.gif"/></td></tr> <tr><td>David</td><td><img alt="one-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rone-and-a-half.gif"/></td></tr>
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2821152.htm">A Single Man : Interview</a></td></tr>
+<tr><td class="mn" colspan="2"><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/atthemovies/txt/s2824439.htm">My Name is Khan</a></td></tr>
+<tr><td>Margaret</td><td><img alt="three-and-a-half stars" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/rthree-and-a-half.gif"/></td></tr>
+</table>
+</div>
+<!-- END RELATED //-->
+</td>
+
+
+
+<!-- END CONTENT CONTAINER -->
+<div id="footer">
+<p><a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/"><img alt="ABC Online" src="/web/20140228024021im_/http://www.abc.net.au/atthemovies/img/logo_abc_footer.gif"/></a> <a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/copyright.htm" title="Copyright">© 2011 ABC</a> | <a href="https://web.archive.org/web/20140228024021/http://www.abc.net.au/privacy.htm" title="Privacy Policy">Privacy Policy</a>
+ | <a href="/web/20140228024021/http://www.abc.net.au/atthemovies/disclaimer.htm">Movie listings disclaimer</a> | <a href="/web/20140228024021/http://www.abc.net.au/conditions.htm">Conditions of Use</a></p>
+<!-- n -->
+</div>
+<!-- END FOOTER //-->
+<div id="loadComments">
+<div class="section" id="comments">
+<h2>Comments (27)</h2>
+<p><a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=2824439&amp;dm=1&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Add your comment</a></p>
+<ul>
+<li>
+<a id="m_ucMessageDisplay26547_m_anchMessageAnchor" name="m26547"></a>
+<h3>Carpio Jackal :</h3>
+<p class="date">15 Jan 2014 6:37:02am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>Very good movie 5 &amp;#127775;&amp;#10024;*</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=26547&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=26547&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay23896_m_anchMessageAnchor" name="m23896"></a>
+<h3>cris :</h3>
+<p class="date">06 Sep 2013 9:26:02am</p>
+<p class="comment">((My Name is Khan))[[4]]<br>hello me name is anas from amercia -Los angeles i love this Movies Its the best</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=23896&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=23896&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay22411_m_anchMessageAnchor" name="m22411"></a>
+<h3>Jade :</h3>
+<p class="date">11 Jun 2013 9:11:25pm</p>
+<p class="comment">((My Name is Khan))[[9]]<br>such an amazing and a must see movie....I watched it three times and cried my heart out three times. its the first time ever happening to me</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=22411&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=22411&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay18895_m_anchMessageAnchor" name="m18895"></a>
+<h3>JMHernandezC :</h3>
+<p class="date">29 Nov 2012 11:52:44pm</p>
+<p class="comment">((My Name is Khan))[[9]]<br>I had the opportunity to see "My name is Khan" and I was struck and deeply surprised by the high quality of the film, the well versed plot and its development, and the impeccable actuation of Shahrukh Khan, representing the autistic character of the hero in the movie. The wonderful message of love prevailing over all forms of creed and the righteousness of action as prove of that love, surmounts by far borders of race, religion or philosophy, converting this movie in a real all times winner of Bollywood. Pleasant film with a message to meditate about.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=18895&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=18895&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay16294_m_anchMessageAnchor" name="m16294"></a>
+<h3>jacko :</h3>
+<p class="date">14 Jul 2012 12:20:43pm</p>
+<p class="comment">((My Name is Khan))[[9]]<br>never have the mind about this film, never seen its previews flashed over the television. i just knew it,and how beautiful it was crafted   aboard a bus. The film really captures my attention and subsequently brings me to a more intense viewing and grasping its content  and emotional experience.I don't know when was the last time that a film brought me to tears, but this one does.<br>.two thumbs up for  SHAHRUKH KHAN superb acting  commends  acting nomination. his portrayal in a non-muslim country, displaying his faith. without hesitation of being incarcerated  is truly commendable . truly recommendable for viewing.</br></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=16294&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=16294&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay15245_m_anchMessageAnchor" name="m15245"></a>
+<h3>yvaperi :</h3>
+<p class="date">24 May 2012 3:43:55am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>((My Name is Khan))[[10]]<br>exelente pelicula no apta para mediocres ni racistas.  de segura que a los putos yankis  no le va a gustar la peli</br></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=15245&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=15245&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay15244_m_anchMessageAnchor" name="m15244"></a>
+<h3>yvaperi :</h3>
+<p class="date">24 May 2012 3:43:17am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>exelente pelicula no apta para mediocres ni racistas.  de segura que a los putos yankis  no le va a gustar la peli</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=15244&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=15244&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay11353_m_anchMessageAnchor" name="m11353"></a>
+<h3>Maysaa :</h3>
+<p class="date">25 Nov 2011 8:42:48pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>It is a very nice movie with a great story</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=11353&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=11353&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay11051_m_anchMessageAnchor" name="m11051"></a>
+<h3>jenna mason :</h3>
+<p class="date">09 Nov 2011 6:41:40pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>A amazing movie the best i have ever seen!!!! its one of my favs and i cried 7 times in it it should be more then just a bollywood clasic it should be around the world and everyone should and shall watch it &gt;//&lt;</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=11051&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=11051&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay9541_m_anchMessageAnchor" name="m9541"></a>
+<h3>Luke :</h3>
+<p class="date">22 Aug 2011 10:28:34pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>Best movie ever<br/></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=9541&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=9541&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay8865_m_anchMessageAnchor" name="m8865"></a>
+<h3>daniel rice(mumbai) :</h3>
+<p class="date">25 Jul 2011 5:39:32pm</p>
+<p class="comment">((My Name is Khan))[[6]]<br>the first half of the movie is cool and it gives u goose bumps but the secound half aint tht good :( but i am a kjo fan since his first film and i think it is a good atempt by the director.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=8865&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=8865&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay8823_m_anchMessageAnchor" name="m8823"></a>
+<h3>MERAJ KHAN :</h3>
+<p class="date">23 Jul 2011 6:59:21pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>I Like the Shahrukh khan's Acting<br>and the Movie is Good</br></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=8823&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=8823&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay7402_m_anchMessageAnchor" name="m7402"></a>
+<h3>Aziz :</h3>
+<p class="date">12 May 2011 10:51:47pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>We enjoyed, something different.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=7402&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=7402&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay7126_m_anchMessageAnchor" name="m7126"></a>
+<h3>Samira :</h3>
+<p class="date">28 Apr 2011 12:45:57am</p>
+<p class="comment">((My Name is Khan))[[9]]<br>Beautiful movie...as actors kajol and shahrukh deliver and Karan as a director proves how great he is. The movie makes you cry aswell as laugh appropriately..although some ideas were larger than life and may be looked at as too unrealisttic..it can not be denied that the message of the movie is sweet and simple..and overall is entertaining movie!</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=7126&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=7126&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay5533_m_anchMessageAnchor" name="m5533"></a>
+<h3>Oscar_E :</h3>
+<p class="date">10 Feb 2011 12:20:18am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>((My Name is Khan))[[10]]<br>one of the best movies I've ever seen in my whole life !! the message and sense of the story was so moving that i didn't even paid attention to the faults or details, such like, music, over acting or any of that, i though it was very well executed, i cried like a baby !!</br></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=5533&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=5533&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay5137_m_anchMessageAnchor" name="m5137"></a>
+<h3>Sosi :</h3>
+<p class="date">10 Jan 2011 5:00:28am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>Really nice film!!</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=5137&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=5137&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay4623_m_anchMessageAnchor" name="m4623"></a>
+<h3>Guilherme :</h3>
+<p class="date">07 Dec 2010 5:53:15pm</p>
+<p class="comment">((My Name is Khan))[[8]]<br>Feel good movie ... but you suffer to get there. (sorry, John's comment) totally inane.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=4623&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=4623&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay4610_m_anchMessageAnchor" name="m4610"></a>
+<h3>John :</h3>
+<p class="date">06 Dec 2010 7:58:36am</p>
+<p class="comment">((My Name is Khan))[[0]]<br>This movie is Pathetic... Be Warned : All the people shouting how great the Movie/Acting/Story is, the truth is they want you to SUFFER as much as they did...<br><br>SRK overacted a retarded guy with no realism, the Storyline is 100% "INSPIRED" by Forrest Gump and the Soundtrack+Direction is equally pathetic.<br><br>If you are a big SRK Fan.. Do yourself a favour,,, DO NOT WATCH THIS MOVIE..or you will end up Cursing the Superstar who might in future gives us all a good flick..</br></br></br></br></br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=4610&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=4610&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay4578_m_anchMessageAnchor" name="m4578"></a>
+<h3>Eva :</h3>
+<p class="date">03 Dec 2010 4:40:54pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>i love that movie i give it 5 stars</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=4578&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=4578&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay4354_m_anchMessageAnchor" name="m4354"></a>
+<h3>Don :</h3>
+<p class="date">20 Nov 2010 5:28:27am</p>
+<p class="comment">((My Name is Khan))[[10]]
+the best movie ive evr seen</p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=4354&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=4354&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay3900_m_anchMessageAnchor" name="m3900"></a>
+<h3>Leigh :</h3>
+<p class="date">25 Oct 2010 12:27:52am</p>
+<p class="comment">((My Name is Khan))[[7]]<br>My Name is Khan is quite a grand film really. A sweeping spectacle of romance and drama yet the film constantly brings laughter and will always be a feel good story. It has many flaws however. (SPOILER; Death by soccer ball? Hmm, if you insist. Entering Georgia in the middle of a catastrophic hurricane? C'Mon!!) Music at times feels out of place and overly dramatic and the production has an obvious B-Grade/Amateurish production, However the beautiful and endearing characters keep this good hearted, well intentioned film always entertaining and engaging. A very good 2.4 hour experience overall!</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=3900&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=3900&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay2349_m_anchMessageAnchor" name="m2349"></a>
+<h3>Tondra  :</h3>
+<p class="date">29 Jul 2010 12:50:03pm</p>
+<p class="comment">((My Name is Khan))[[9]]<br>Brilliant movie. Speechless..</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=2349&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=2349&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay707_m_anchMessageAnchor" name="m707"></a>
+<h3>Ziaur Rahman :</h3>
+<p class="date">19 Apr 2010 8:41:19pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>I love you srk. it is such a great film, beautifully acted by Shahrukh Khan.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=707&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=707&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay336_m_anchMessageAnchor" name="m336"></a>
+<h3>Simon :</h3>
+<p class="date">29 Mar 2010 4:29:50am</p>
+<p class="comment">((My Name is Khan))[[1]]<br>This was certainly no Rain Man. I thought it was a comedy the acting was so poor. Had to switch off after an hour as it became painful to watch.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=336&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=336&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay220_m_anchMessageAnchor" name="m220"></a>
+<h3>Abdullah :</h3>
+<p class="date">19 Mar 2010 12:33:49pm</p>
+<p class="comment">((My Name is Khan))[[10]]<br>what a movie man!!</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=220&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=220&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay78_m_anchMessageAnchor" name="m78"></a>
+<h3>Raheel Arif :</h3>
+<p class="date">10 Mar 2010 12:27:28am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>i love you srk.  it is such a great film, beautifully acted by Shahrukh Khan and the storyline is very attention grabbing. The movie promotes peace and humanity and there are a lot of good hidden messages in the movie. some of which are that in this world, either you are a good person or a bad person, religion is not the criteria, humanity is. A person should not be targetted based on their name and religion. Terrorism has no religion and that should be clear.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=78&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=78&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+<li>
+<a id="m_ucMessageDisplay71_m_anchMessageAnchor" name="m71"></a>
+<h3>Hiroo :</h3>
+<p class="date">09 Mar 2010 10:24:19am</p>
+<p class="comment">((My Name is Khan))[[10]]<br>deserves 5 stars. over all great movie towards humanity. &amp; people need to wake up &amp; realize Muslim's are not terrorists &amp; every terrorist is not a Muslim.</br></p>
+<p class="links">
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/NewMessage.aspx?b=117&amp;t=18&amp;tn=&amp;dm=1&amp;m=71&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Reply</a>
+<a href="https://web.archive.org/web/20140228024021/http://www2b.abc.net.au/tmb/View/AlertModerator.aspx?b=117&amp;m=71&amp;tpa=&amp;r=%2ftmb%2fView%2fMessage.aspx%3fb%3d117%26t%3d18%26a%3d0%26ps%3d50%26tpa%3d%26uto%3d1%26dm%3d4%26ci%3d0%26pd%3d1%26so%3dDateTime%26soa%3dFalse%26p%3d1%26p2%3d0" onclick="return popup(this.href);">Alert moderator</a>
+</p>
+<ul>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<!--
+     FILE ARCHIVED ON 02:40:21 Feb 28, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:26:25 Oct 17, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 273.462
+  esindex: 0.017
+  LoadShardBlock: 236.994 (3)
+  exclusion.robots: 0.192
+  exclusion.robots.policy: 0.178
+  PetaboxLoader3.resolve: 222.66 (3)
+  CDXLines.iter: 22.347 (3)
+  PetaboxLoader3.datanode: 151.793 (4)
+  load_resource: 196.196
+  RedisCDXSource: 8.69
+-->

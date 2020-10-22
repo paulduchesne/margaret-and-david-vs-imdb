@@ -1,0 +1,399 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=436;archive_analytics.send_pageview({});});</script><script charset="utf-8" src="/_static/js/playback.bundle.js?v=BsQ6byDz" type="text/javascript"></script>
+<script charset="utf-8" src="/_static/js/wombat.js?v=cRqOKCOw" type="text/javascript"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.sbs.com.au:80/movieshow/index.php3?action=review&id=513","20050108092635","https://web.archive.org/","web","/_static/",
+	      "1105176395");
+</script>
+<link href="/_static/css/banner-styles.css?v=NHuXCfBH" rel="stylesheet" type="text/css"/>
+<link href="/_static/css/iconochive.css?v=qtvMKcIJ" rel="stylesheet" type="text/css"/>
+<!-- End Wayback Rewrite JS Include -->
+<title>The Movie Show</title>
+<meta content="The Movie Show  - Yolngu Boy" name="title"/>
+<meta content="Movieshow, The Movie Show, movie reviews, movie trailers, dvd reviews, cinema, dvd, SBS, Megan Spencer, Fenella Kernebone, Jaimie Leonarder, Marc Fennell" name="keywords"/>
+<meta content="I must apologise for my pronunciation of Yolngu Boy a couple of weeks ago on the programme It was no - The Movie Show reviews latest cinema and DVD releases" name="description"/>
+<meta content="SBS" name="publisher"/>
+<meta content="English" name="Language"/>
+<link href="/web/20050108092635cs_/http://www.sbs.com.au/movieshow/lib/style.css" rel="STYLESHEET" type="text/css"/>
+<style>
+input, textarea, select {border-top-width : 1px;border-right-width : 1px;border-bottom-width : 1px; border-left-width : 1px;}
+input {text-indent : 2px;}
+input.button{border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;}
+.textinput{width:150px}
+</style>
+<script language="javascript" src="/web/20050108092635js_/http://www.sbs.com.au/movieshow/lib/functions.js"></script>
+</head>
+<body bgcolor="#5C050F" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+<script> 
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+function clearfield(){
+ document.AdvSearchForm.query0.value="";
+}
+
+//-->
+</script>
+<style>
+input,textarea, select {color : #000000;font-family:Verdana, Arial, Helvetica,sans-serif;font-size:12px;border-color:#000000;border-style:thin}
+.sbshomelink{font-family:arial;font-size:12px;color:#000000;}
+.sbshomelink a, .sbshomelink a:visited{font-family:arial;font-size:12px;color:#000000;text-decoration:none}
+.sbshomelink a:hover, .sbshomelink a:active{font-family:arial;font-size:12px;color:#000000;text-decoration:underline}
+</style>
+<style>
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("https://web.archive.org/web/20050108092635cs_/http://www.sbs.com.au/sbs_front/lib/iestyles.css");
+-->
+</style>
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" valign="top">
+<form name="form1">
+<tr>
+<td bgcolor="#E0DFDF" height="33" valign="middle" width="48"><a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/"><img alt="" border="0" height="33" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/gnav_sbslogo2.gif" width="45"/></a></td>
+<td bgcolor="#E0DFDF" class="sbshomelink" height="33" nowrap="" valign="middle" width="67"><a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/">SBS HOME</a> </td>
+<td bgcolor="#D7D7D7" height="33" nowrap="" valign="middle"> <select class="navdrop" name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+<option selected="" value="">SBS Sites</option>
+<option value="http://news.sbs.com.au/dateline">- Dateline</option>
+<option value="http://www.sbs.com.au/insight">- Insight</option>
+<option value="http://www20.sbs.com.au/news/livingblack">- Living Black</option>
+<option value="http://www.theworldnews.com.au">- The World News</option>
+<option value="http://www.sbs.com.au/worldview">- World View</option>
+<option value="http://203.15.102.140/news/worldwatch/worldwatch.php3?choser=now">- World Watch</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/alchemy">- Alchemy Radio</option>
+<option value="http://www9.sbs.com.au/radio/">- Radio</option>
+<option value="http://www9.sbs.com.au/radio">- Radio Language Programs</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/cyclingcentral">- Cycling Central</option>
+<option value="http://www.sbs.com.au/fashionista">- Fashionista</option>
+<option value="http://www.sbs.com.au/foodlovers">- Food Lovers' Guide To Australia</option>
+<option value="http://www.sbs.com.au/globalvillage/">- Global Village</option>
+<option value="http://www.sbs.com.au/hotline/">- Hotline</option>
+<option value="http://www.sbs.com.au/ifawards">- If Awards</option>
+<option value="http://www.sbs.com.au/siberia">- In Siberia Tonight</option>
+<option value="http://www.sbs.com.au/insideaust">- Inside Australia</option>
+<option value="http://www.sbs.com.au/johnsafranvsgod">- John Safran vs God</option>
+<option value="http://www.sbs.com.au/karaoke">- Karaoke Challenge</option>
+<option value="http://www.sbs.com.au/lifesupport">- Life Support</option>
+<option value="http://www.sbs.com.au/lonelyplanet">- Lonely Planet: Six Degrees</option>
+<option value="http://www.sbs.com.au/movieshow/">- Movie Show</option>
+<option value="http://www.sbs.com.au/mums/">- Mum's The Word</option>
+<option value="http://www.musicjamboree.com">- Music Jamboree</option>
+<option value="http://www.sbs.com.au/nest/index.html">- Nest</option>
+<option value="http://www.sbs.com.au/pizza/">- Pizza</option>
+<option value="http://www.sbs.com.au/queerasfolk/">- Queer as Folk</option>
+<option value="http://www20.sbs.com.au/rockwiz">- RocKwiz</option>
+<option value="http://www.sbs.com.au/sport">- SBS Sport</option>
+<option value="http://www.sbs.com.au/boss">- She'll be right boss</option>
+<option value="http://www.sbs.com.au/southpark/">- South Park</option>
+<option value="http://www.sbs.com.au/storylineaust">- Storyline Australia</option>
+<option value="http://www.sbs.com.au/subsonics">- Subsonics</option>
+<option value="http://www.sbs.com.au/deadlys">- The Deadly Awards</option>
+<option value="http://www.theworldfeast.com.au">- The World Feast</option>
+<option value="http://www.sbs.com.au/viva">- Viva</option>
+<option value="http://www.sbs.com.au/whatson/">- What's On TV</option>
+<option value="http://www.sbs.com.au/worldtrack">- World Track</option>
+<option value=""></option>
+<option value="http://www.cornerfold.com.au">- Cornerfold</option>
+<option value="http://www.sbs.com.au/desktopdelivery">- Desktop Delivery</option>
+<option value="http://www.sbs.com.au/gold/">- Gold</option>
+<option value="http://www.sbs.com.au/myspace">- My Space</option>
+<option value="http://www.theworldgame.com.au">- The World Game</option>
+<option value="http://www.sbs.com.au/whatever">- Whatever Music</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/newviewers">- New Regional Viewers</option>
+<option value="http://www.sbs.com.au/sbscorporate">- SBS Corporate</option>
+<option value="http://www.sbs.com.au/naca">- SBS Current Affairs Sales</option>
+<option value="http://www.sbs.com.au/digital">- SBS Digital Television</option>
+<option value="http://www.sbs.com.au/publicity/">- SBS Publicity</option>
+<option value="http://www.sbs.com.au/sales">- SBS Sales Division</option>
+<option value="http://www.sbs.com.au/sbsshop/">- SBS Shop</option>
+<option value="http://www.sbs.com.au/subtitling/">- SBS Subtitling</option>
+<option value="http://www.sbs.com.au/transmission/transmission.html">- SBS Transmission</option>
+<option value="http://www.sbs.com.au/sbsi">- SBSi</option>
+<option value="http://www.sbs.com.au/SBSin">- SBSin</option>
+</select> </td>
+</tr></form>
+<td bgcolor="#E0DFDF" nowrap="" valign="middle" width="150"><form action="https://web.archive.org/web/20050108092635/http://203.15.102.129/NSearch/SearchServlet" method="get" name="AdvSearchForm">
+<input name="site" type="HIDDEN" value="sbsvs1"/>
+<input name="encoding" type="hidden" value="UTF-8"/>
+<input class="navsearch" name="query0" onfocus="clearfield()" size="15" type="text" value="SEARCH SBS"/></form></td>
+<td bgcolor="#E0DFDF" nowrap="" valign="middle" width="20"><input border="0" name="submit" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/sbs_front/images/go.gif" type="image" value="Go"/>
+<input name="operator0" type="hidden" value="1"/>
+<input name="numhits" type="hidden" value="25"/>
+<input name="collection" type="hidden" value="SBS"/></td>
+<td align="right" bgcolor="#D4D3D3" width="100%"><img alt="" border="0" height="33" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/spacer.gif" width="242"/></td>
+</table></body></html>
+
+<tr>
+<td bgcolor="#FFFFFF" colspan="3" height="14" valign="top"><img alt="" border="0" height="14" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/logo_header.gif" width="278"/></td>
+<td align="right" bgcolor="#FFFFFF" colspan="2" height="14" valign="top"><a href="https://web.archive.org/web/20050108092635/http://www.theworldnews.com.au/"><img alt="" border="0" height="14" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/more_header1.gif" width="35"/></a></td>
+<td background="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/tile_header.gif" height="14" valign="top" width="100%"><img alt="" border="0" height="14" src="https://web.archive.org/web/20050108092635im_/http://www.sbs.com.au/nav/more_header2.gif" width="215"/></td>
+</tr>
+
+<script language="javascript" src="https://web.archive.org/web/20050108092635js_/http://www9.sbs.com.au/theworldnews/lib/ticker.js"></script>
+<table border="0" cellpadding="3" cellspacing="0" height="74" width="875">
+<tr>
+<td background="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/dvdheader.jpg" class="onair" height="74" valign="top" width="875">Wednesdays
+		at 8pm<br/>Sundays at 10:20pm</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="755">
+<tr>
+<td background="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/left_under.jpg" class="menu" valign="top" width="124">
+<!-- BEGIN RIGHT NAV -->
+<table border="0" cellscaping="3">
+<tr><td><a class="menu" href="index.php3"> HOME </a></td></tr>
+<tr><td height="5"></td></tr>
+<tr><td><a class="menu" href="index.php3?action=features"> FEATURES </a></td></tr>
+<tr><td><a class="menu" href="index.php3?action=dvd"> DVD REVIEWS </a></td></tr>
+<tr><td><a class="menu" href="index.php3?action=incinemas"> CINEMA REVIEWS </a></td></tr>
+<tr><td><a class="menu" href="index.php3?action=interviews"> INTERVIEWS </a></td></tr>
+<tr><td><a class="menu" href="https://web.archive.org/web/20050108092635/http://www8.sbs.com.au/sbsforum/viewforum.php?f=3" target="_new"> FORUM </a></td></tr>
+<tr><td height="5"></td></tr>
+<tr><td><a class="menu" href="index.php3?action=presenters"> PRESENTERS </a></td></tr>
+<tr><td><a class="menu" href="index.php3?action=cinemalinks"> CINEMA LINKS </a></td></tr>
+<!--<tr><td><a href="index.php3?action=dvdlinks" class="menu">&nbsp;DVD LINKS&nbsp;</a></td></tr>-->
+</table>
+<!-- END RIGHT NAV --> <br/>
+<table border="0" cellpadding="3" cellspacing="0">
+<tr>
+<td class="related">RELATED SITES<br/>
+<a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/whatson/index.php3?tvsch=1"><img alt="" border="0" height="38" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/whatson_promo.jpg" width="120"/></a><br/>
+<a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/worldtales"><img alt="" border="0" height="31" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/worldtales_promo.jpg" width="120"/></a></td>
+</tr><tr>
+<td class="multimedia">MULTIMEDIA REQUIRES<br/>
+<a href="https://web.archive.org/web/20050108092635/http://www.real.com.au/download_realplayer_sbs.html" target="_new"><img alt="" border="0" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/realone.gif"/></a></td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<!-- BEGIN CENTRE PANEL -->
+<table border="0" cellpadding="0" cellspacing="0" width="436">
+<tr>
+<td class="panel"><img alt="" border="0" height="26" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/h_cinemareview.gif" width="436"/></td>
+</tr><tr>
+<td class="panel">
+<table border="0" cellpadding="3" cellspacing="0" class="panel" width="436">
+<tr>
+<td class="panel" valign="top" width="100%">
+<font class="header">Yolngu Boy</font><br/>
+<b>Starring: </b>Sean Mununggur; John Sebastian Pilakui; Nathan Daniels; Makuma Yunupingu; Lirrina Mununggurr; Mangatjay Ynunupingu; Nungki Yunupingu; Jack Thompson<br/>
+<b>Directed by: </b>Stephen Johnson<br/>
+<b>Genre: </b><br/>
+<b>Rating: </b><br/>
+<b>Reviewed by: </b>Margaret Pomeranz<br/>
+<br/>
+<form action="submit.php3" method="post">
+<table border="0" cellpadding="0" cellspacing="1">
+<tr>
+<input name="movieid" type="hidden" value="513"/>
+<td class="panel">Rate this movie:<select name="myVote">
+<option value="">select::</option>
+<option value="0">0</option>
+<option value="1">.5</option>
+<option value="2">1</option>
+<option value="3">1.5</option>
+<option value="4">2</option>
+<option value="5">2.5</option>
+<option value="6">3</option>
+<option value="7">3.5</option>
+<option value="8">4</option>
+<option value="9">4.5</option>
+<option value="10">5</option>
+</select></td>
+<td><input name="submit" type="submit" value="go"/></td>
+</tr>
+</table></form>
+</td></tr></table>
+</td>
+<td align="right" class="panel" valign="top"><img height="5" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/spacer.gif"/>
+<img height="5" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/spacer.gif"/><br/>
+</td>
+</tr><tr>
+<td class="panel" colspan="2">I must apologise for my pronunciation of Yolngu Boy a couple of weeks ago on the programme It was not good but I`ve been practising.  It brought home to me that for the young men in the film English is not actually their first language.  Lorrpu, Botj and Milika
+<br/>have an important shared history, they were initiated as men together - amazingly authentic scenes in the film.  But now Botj is straying, he`s had a stint in gaol and it looks as though he`s heading for another after a petrol-sniffing bout that led to him running amok in the local store and community centre.  Lorrpu and Milika decide to trek with him to Darwin to plead his case before a tribal elder.  Their confrontation with the environment of their heritage brings adventure, danger, fun and maturity.....This is such an impressive film, visually it seems like you`re being presented with parts of Australia and Australian life that you`ve never seen before.  The director was Stephen Johnson, a long-time resident of the Northern Territory, a filmmaker who`s directed most of Yothu Yindi`s music clips - the Yunupingu brothers were associate producers of Yolngu Boy.  Johnson`s a filmmaker with real visual flair, but working with Chris Anastassiades` screenplay he`s managed to bring an authentic depth to this story. 
+<br/>There are simply wonderful performances from three absolute newcomers to the screen - Sean Mununggurr as Botj, John Sebastian Pilakui as Lorrpu and Nathan Daniels as Milika.   Yolngu Boy doesn`t present an idealised version of aboriginal traditional life and it doesn`t shy away from some of the very real problems confronting many aboriginal communities in the top end...... I just thought it was terrific....
+<br/>
+<br/>Comments from David Stratton
+<br/>A simple, straightforward, rather contrived film -contrived because of a screenplay which offers us three directions for aboriginal youth in its three main characters. Attractively filmed on spectacular locations, a bit awkwardly acted by some of the supporting characters (the three leads are effective), but very likeable.
+<br/>
+<br/>
+<br/><br/><br/>
+<b>DAVID: <img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><br/>
+<b>MARGARET: <img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><br/>
+<br/>
+<b>VIEWER RATING: <img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/star.gif"/><img src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/starhalf.gif"/><br/>
+<br/>
+<a href="index.php3?action=incinemas">back to all cinema reviews</a></b></b></b></td>
+</tr>
+</table>
+</td>
+</tr><tr>
+<td class="panel"><hr class="hr" width="95%"/></td>
+</tr><tr>
+<td class="panel"> OR browse the review archive alphabetically<br/><center>
+<map name="alphabet">
+<area alt="" coords="0,0,18,19" href="index.php3?action=browseReview&amp;letter=a"/>
+<area alt="" coords="18,0,35,19" href="index.php3?action=browseReview&amp;letter=b"/>
+<area alt="" coords="35,19,51,0" href="index.php3?action=browseReview&amp;letter=c"/>
+<area alt="" coords="52,21,67,0" href="index.php3?action=browseReview&amp;letter=d"/>
+<area alt="" coords="67,21,83,0" href="index.php3?action=browseReview&amp;letter=e"/>
+<area alt="" coords="83,19,99,0" href="index.php3?action=browseReview&amp;letter=f"/>
+<area alt="" coords="100,19,114,0" href="index.php3?action=browseReview&amp;letter=g"/>
+<area alt="" coords="114,0,131,21" href="index.php3?action=browseReview&amp;letter=h"/>
+<area alt="" coords="131,0,145,19" href="index.php3?action=browseReview&amp;letter=i"/>
+<area alt="" coords="145,19,160,0" href="index.php3?action=browseReview&amp;letter=j"/>
+<area alt="" coords="160,21,174,0" href="index.php3?action=browseReview&amp;letter=k"/>
+<area alt="" coords="175,22,189,0" href="index.php3?action=browseReview&amp;letter=l"/>
+<area alt="" coords="191,25,210,0" href="index.php3?action=browseReview&amp;letter=m"/>
+<area alt="" coords="210,20,227,0" href="index.php3?action=browseReview&amp;letter=n"/>
+<area alt="" coords="225,24,244,0" href="index.php3?action=browseReview&amp;letter=o"/>
+<area alt="" coords="243,24,260,0" href="index.php3?action=browseReview&amp;letter=p"/>
+<area alt="" coords="261,23,277,0" href="index.php3?action=browseReview&amp;letter=q"/>
+<area alt="" coords="278,0,295,19" href="index.php3?action=browseReview&amp;letter=r"/>
+<area alt="" coords="294,19,310,0" href="index.php3?action=browseReview&amp;letter=s"/>
+<area alt="" coords="310,20,326,0" href="index.php3?action=browseReview&amp;letter=t"/>
+<area alt="" coords="325,26,343,0" href="index.php3?action=browseReview&amp;letter=u"/>
+<area alt="" coords="359,0,343,19" href="index.php3?action=browseReview&amp;letter=v"/>
+<area alt="" coords="378,0,359,20" href="index.php3?action=browseReview&amp;letter=w"/>
+<area alt="" coords="378,19,394,0" href="index.php3?action=browseReview&amp;letter=x"/>
+<area alt="" coords="394,0,411,20" href="index.php3?action=browseReview&amp;letter=y"/>
+<area alt="" coords="410,0,432,22" href="index.php3?action=browseReview&amp;letter=z"/>
+</map><img alt="" border="0" height="19" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/alphabet.gif" usemap="#alphabet" width="428"/></center></td>
+</tr><tr>
+<td class="panel"><img alt="" border="0" height="8" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/cellbottom.gif" width="436"/></td>
+</tr>
+</table>
+<!-- END CENTRE PANEL -->
+
+<td valign="top">
+<!-- BEGIN LEFT COLUMN -->
+<img alt="" border="0" height="20" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/search.jpg" width="192"/><br/>
+<table border="0" cellpadding="2" cellspacing="0" class="search" width="192">
+<form action="https://web.archive.org/web/20050108092635/http://203.15.102.129/NSearch/SearchServlet" method="get" name="AdvSearchForm" onsubmit="javascript:return doQuery(this, true);">
+<input name="site" type="HIDDEN" value="movieshow"/>
+<input name="encoding" type="HIDDEN" value="UTF-8"/>
+<tr>
+<td class="search"><input class="textinput" name="query0" size="20" type="text" value=""/></td>
+<td class="search"><input name="Submit" type="submit" value="go"/></td>
+</tr>
+<input name="operator0" type="hidden" value=""/>
+<input name="template" type="hidden" value=""/>
+<input name="dates" type="hidden" value=""/>
+<input name="numhits" type="hidden" value="25"/>
+<input name="" type="Hidden"/>
+<input name="" type="hidden"/>
+</form>
+</table>
+<img alt="" border="0" height="8" src="/web/20050108092635im_/http://www.sbs.com.au/movieshow/images/search_bottom.jpg" width="192"/><br/>
+<!--<br><a href="#" onclick="window.open('about.html','about','top=20,left=20,height=400,width=500,scrollbars=yes')"><img src="images/about.jpg" width="192" height="48" alt="" border="0"></a><br>-->
+<br/>
+<!--	<img src="images/boxoffice.gif" width="192" height="20" alt="" border="0"><br>
+			<table width="192" cellpadding="1" cellspacing="0" border="0" class="search"> 
+				<tr class="boxoffice1">
+					<td class="boxearn" colspan="2" valign="top">&nbsp;&nbsp;week ending 0000-00-00</td>
+					<td class="boxearn">box office<br>
+					earnings</td>
+				</tr><tr class="boxoffice2">
+					<td valign="top">1.</td>
+					<td height="20" valign="top"></td>
+					<td class="boxearn" valign="top"></td>
+				</tr><tr class="boxoffice1">
+					<td valign="top">2.</td>
+					<td height="20" valign="top"></td>
+					<td class="boxearn" valign="top"></td>
+				</tr><tr class="boxoffice2">
+					<td valign="top">3.</td>
+					<td height="20" valign="top"></td>
+					<td class="boxearn" valign="top"></td>
+				</tr><tr class="boxoffice1">
+					<td valign="top">4.</td>
+					<td height="20" valign="top"></td>
+					<td class="boxearn" valign="top"></td>
+				</tr><tr class="boxoffice2">
+					<td valign="top">5.</td>
+					<td height="20" valign="top"></td>
+					<td class="boxearn" valign="top"></td>
+				</tr><tr class="boxoffice1">
+					<td valign="top">&nbsp;</td>
+					<td colspan="2" class="boxearn" valign="top">Source:MPDAA</td>
+				</tr>
+			</table>
+			<img src="images/boxoffice_bottom.gif" width="192" height="7" alt="" border="0"><br>
+			<br>
+			<!-- END LEFT COLUMN  
+			-->
+</td>
+<tr>
+<td> </td>
+<td align="center"><br/>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" class="footer">
+<a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate">About SBS</a>  |  <!-- <a href="">Help</a>  |--><a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate/index.html?id=369">Feedback</a><br/>
+<a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate/index.html?id=400">© 2002 Special Broadcasting Service</a><br/>
+<a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate/index.html?id=399">Terms and Conditions</a>  |  <a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate/index.html?id=402">Privacy</a>  |  <a href="https://web.archive.org/web/20050108092635/http://www.sbs.com.au/sbscorporate/index.html?id=403">Disclaimer</a></td>
+</tr>
+</table>
+</td>
+<td> </td>
+</tr>
+
+<br/>
+<br/>
+<!-- STARTRedMeasureV4-Java v1.1  Revision: 1.8-->
+<!--COPYRIGHT 2000 Red Sheriff Limited-->
+<script language="JavaScript"><!--
+var pCid="au_sbs_0";
+var w0=1;
+var refR=escape(document.referrer);
+if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//--></script>
+<script language="JavaScript1.1"><!--
+var w0=0;
+//--></script>
+<script language="JavaScript1.1" src="https://web.archive.org/web/20050108092635js_/http://server-au.imrworldwide.com/a1.js">
+</script>
+<script language="JavaScript"><!--
+if(w0){
+var imgN='<img src="https://web.archive.org/web/20050108092635/http://server-au.imrworldwide.com/cgi-bin/count?ref='+
+	refR+'&cid='+pCid+'" width=1 height=1>';
+if(navigator.userAgent.indexOf('Mac')!=-1){document.write(imgN);
+}else{
+	document.write('<applet code="Measure.class" '+
+	'codebase="https://web.archive.org/web/20050108092635/http://server-au.imrworldwide.com/"'+'width=1 height=2>'+
+	'<param name="ref" value="'+refR+'">'+'<param name="cid" value="'+pCid+
+	'"><textflow>'+imgN+'</textflow></applet>');
+	}
+}
+document.write("<COMMENT>");
+//-->
+</script>
+<noscript>
+</noscript>
+
+<!--
+     FILE ARCHIVED ON 09:26:35 Jan 08, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:49:52 Oct 18, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  RedisCDXSource: 38.174
+  exclusion.robots.policy: 0.206
+  CDXLines.iter: 24.612 (3)
+  PetaboxLoader3.resolve: 194.253 (2)
+  esindex: 0.016
+  load_resource: 181.847
+  PetaboxLoader3.datanode: 111.849 (4)
+  LoadShardBlock: 168.157 (3)
+  captures_list: 234.716
+  exclusion.robots: 0.222
+-->

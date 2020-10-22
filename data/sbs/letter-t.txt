@@ -1,0 +1,581 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=654;archive_analytics.send_pageview({});});</script><script charset="utf-8" src="/_static/js/playback.bundle.js?v=BsQ6byDz" type="text/javascript"></script>
+<script charset="utf-8" src="/_static/js/wombat.js?v=cRqOKCOw" type="text/javascript"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.sbs.com.au:80/movieshow/index.php3?action=browseReview&letter=t","20041118085645","https://web.archive.org/","web","/_static/",
+	      "1100768205");
+</script>
+<link href="/_static/css/banner-styles.css?v=NHuXCfBH" rel="stylesheet" type="text/css"/>
+<link href="/_static/css/iconochive.css?v=qtvMKcIJ" rel="stylesheet" type="text/css"/>
+<!-- End Wayback Rewrite JS Include -->
+<title>The Movie Show</title>
+<meta content="The Movie Show  - , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , " name="title"/>
+<meta content="Movieshow, The Movie Show, movie reviews, movie trailers, dvd reviews, cinema, dvd, SBS, Megan Spencer, Fenella Kernebone, Jaimie Leonarder, Marc Fennell" name="keywords"/>
+<meta content=" - The Movie Show reviews latest cinema and DVD releases" name="description"/>
+<meta content="SBS" name="publisher"/>
+<meta content="English" name="Language"/>
+<link href="/web/20041118085645cs_/http://www.sbs.com.au/movieshow/lib/style.css" rel="STYLESHEET" type="text/css"/>
+<style>
+input, textarea, select {border-top-width : 1px;border-right-width : 1px;border-bottom-width : 1px; border-left-width : 1px;}
+input {text-indent : 2px;}
+input.button{border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;}
+.textinput{width:150px}
+</style>
+<script language="javascript" src="/web/20041118085645js_/http://www.sbs.com.au/movieshow/lib/functions.js"></script>
+</head>
+<body bgcolor="#5C050F" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+<script> 
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+function clearfield(){
+ document.AdvSearchForm.query0.value="";
+}
+
+//-->
+</script>
+<style>
+input,textarea, select {color : #000000;font-family:Verdana, Arial, Helvetica,sans-serif;font-size:12px;border-color:#000000;border-style:thin}
+.sbshomelink{font-family:arial;font-size:12px;color:#000000;}
+.sbshomelink a, .sbshomelink a:visited{font-family:arial;font-size:12px;color:#000000;text-decoration:none}
+.sbshomelink a:hover, .sbshomelink a:active{font-family:arial;font-size:12px;color:#000000;text-decoration:underline}
+</style>
+<style>
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("https://web.archive.org/web/20041118085645cs_/http://www.sbs.com.au/sbs_front/lib/iestyles.css");
+-->
+</style>
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" valign="top">
+<form name="form1">
+<tr>
+<td bgcolor="#E0DFDF" height="33" valign="middle" width="48"><a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/"><img alt="" border="0" height="33" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/gnav_sbslogo2.gif" width="45"/></a></td>
+<td bgcolor="#E0DFDF" class="sbshomelink" height="33" nowrap="" valign="middle" width="67"><a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/">SBS HOME</a> </td>
+<td bgcolor="#D7D7D7" height="33" nowrap="" valign="middle"> <select class="navdrop" name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+<option selected="" value="">SBS Sites</option>
+<option value="http://www.sbs.com.au/dateline">- Dateline</option>
+<option value="http://www.sbs.com.au/insight">- Insight</option>
+<option value="http://www.sbs.com.au/livingblack">- Living Black</option>
+<option value="http://www.theworldnews.com.au">- The World News</option>
+<option value="http://www.sbs.com.au/worldview">- World View</option>
+<option value="http://203.15.102.140/news/worldwatch/worldwatch.php3?choser=now">- World Watch</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/alchemy">- Alchemy Radio</option>
+<option value="http://www9.sbs.com.au/radio/">- Radio</option>
+<option value="http://www9.sbs.com.au/radio">- Radio Language Programs</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/australiabynumbers">- Australia By Numbers</option>
+<option value="http://www.sbs.com.au/babyfather">- Babyfather</option>
+<option value="http://www.sbs.com.au/blaktrax">- blaktrax</option>
+<option value="http://www.sbs.com.au/chappelle">- Chappelle</option>
+<option value="http://www.sbs.com.au/crankyankers">- Crank Yankers</option>
+<option value="http://www.sbs.com.au/cyclingcentral">- Cycling Central</option>
+<option value="http://www.sbs.com.au/sheila">- Desperately Seeking Sheila</option>
+<option value="http://www.sbs.com.au/eatcarpet">- Eat Carpet</option>
+<option value="http://www.sbs.com.au/eurovision">- Eurovision</option>
+<option value="http://www.sbs.com.au/wedding">- Everyone Loves a Wedding</option>
+<option value="http://www.sbs.com.au/fashionista">- Fashionista</option>
+<option value="http://www.sbs.com.au/fineline">- Fine Line</option>
+<option value="http://www.sbs.com.au/foodlovers">- Food Lovers' Guide To Australia</option>
+<option value="http://www.sbs.com.au/frontup">- Front Up</option>
+<option value="http://www.sbs.com.au/globalvillage/">- Global Village</option>
+<option value="http://www.sbs.com.au/hotline/">- Hotline</option>
+<option value="http://www.sbs.com.au/ifawards">- If Awards</option>
+<option value="http://www.sbs.com.au/ifonly">- If Only</option>
+<option value="http://www.sbs.com.au/siberia">- In Siberia Tonight</option>
+<option value="http://www.sbs.com.au/insideaust">- Inside Australia</option>
+<option value="http://www.sbs.com.au/johnsafranvsgod">- John Safran vs God</option>
+<option value="http://www.sbs.com.au/karaoke">- Karaoke Challenge</option>
+<option value="http://www.sbs.com.au/lifesupport">- Life Support</option>
+<option value="http://www.sbs.com.au/movieshow/">- Movie Show</option>
+<option value="http://www.sbs.com.au/mums/">- Mum's The Word</option>
+<option value="http://www.sbs.com.au/nest/index.html">- Nest</option>
+<option value="http://www6.sbs.com.au/paralympic">- Paralympic Games</option>
+<option value="http://www.sbs.com.au/pizza/">- Pizza</option>
+<option value="http://www.sbs.com.au/queerasfolk/">- Queer as Folk</option>
+<option value="http://www.sbs.com.au/sport">- SBS Sport</option>
+<option value="http://www.sbs.com.au/boss">- She'll be right boss</option>
+<option value="http://www.sbs.com.au/southpark/">- South Park</option>
+<option value="http://www.sbs.com.au/storylineaust">- Storyline Australia</option>
+<option value="http://www.sbs.com.au/subsonics">- Subsonics</option>
+<option value="http://www.sbs.com.au/tales/">- Tales from a Suitcase</option>
+<option value="http://www.sbs.com.au/deadlys">- The Deadly Awards</option>
+<option value="http://www.theworldfeast.com.au">- The World Feast</option>
+<option value="http://www.sbs.com.au/tdf">- Tour de France</option>
+<option value="http://www.sbs.com.au/viva">- Viva</option>
+<option value="http://www.sbs.com.au/whatson/">- What's On TV</option>
+<option value="http://www.sbs.com.au/worldtrack">- World Track</option>
+<option value=""></option>
+<option value="http://www.cornerfold.com.au">- Cornerfold</option>
+<option value="http://www.sbs.com.au/desktopdelivery">- Desktop Delivery</option>
+<option value="http://www.sbs.com.au/gold/">- Gold</option>
+<option value="http://www.sbs.com.au/myspace">- My Space Is An Amazing Place</option>
+<option value="http://www.theworldgame.com.au">- The World Game</option>
+<option value="http://www.sbs.com.au/whatever">- Whatever Music</option>
+<option value=""></option>
+<option value="http://www.sbs.com.au/newviewers">- New Regional Viewers</option>
+<option value="http://www.sbs.com.au/sbscorporate">- SBS Corporate</option>
+<option value="http://www.sbs.com.au/naca">- SBS Current Affairs Sales</option>
+<option value="http://www.sbs.com.au/digital">- SBS Digital Television</option>
+<option value="http://www.sbs.com.au/publicity/">- SBS Publicity</option>
+<option value="http://www.sbs.com.au/sales">- SBS Sales Division</option>
+<option value="http://www.sbs.com.au/sbsshop/">- SBS Shop</option>
+<option value="http://www.sbs.com.au/subtitling/">- SBS Subtitling</option>
+<option value="http://www.sbs.com.au/transmission/transmission.html">- SBS Transmission</option>
+<option value="http://www.sbs.com.au/sbsi">- SBSi</option>
+<option value="http://www.sbs.com.au/SBSin">- SBSin</option>
+</select> </td>
+</tr></form>
+<td bgcolor="#E0DFDF" nowrap="" valign="middle" width="150"><form action="https://web.archive.org/web/20041118085645/http://203.15.102.129/NSearch/SearchServlet" method="get" name="AdvSearchForm">
+<input name="site" type="HIDDEN" value="sbsvs1"/>
+<input name="encoding" type="hidden" value="UTF-8"/>
+<input class="navsearch" name="query0" onfocus="clearfield()" size="15" type="text" value="SEARCH SBS"/></form></td>
+<td bgcolor="#E0DFDF" nowrap="" valign="middle" width="20"><input border="0" name="submit" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/sbs_front/images/go.gif" type="image" value="Go"/>
+<input name="operator0" type="hidden" value="1"/>
+<input name="numhits" type="hidden" value="25"/>
+<input name="collection" type="hidden" value="SBS"/></td>
+<td align="right" bgcolor="#D4D3D3" width="100%"><img alt="" border="0" height="33" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/spacer.gif" width="242"/></td>
+</table></body></html>
+
+<tr>
+<td bgcolor="#FFFFFF" colspan="3" height="14" valign="top"><img alt="" border="0" height="14" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/logo_header.gif" width="278"/></td>
+<td align="right" bgcolor="#FFFFFF" colspan="2" height="14" valign="top"><a href="https://web.archive.org/web/20041118085645/http://www.theworldnews.com.au/"><img alt="" border="0" height="14" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/more_header1.gif" width="35"/></a></td>
+<td background="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/tile_header.gif" height="14" valign="top" width="100%"><img alt="" border="0" height="14" src="https://web.archive.org/web/20041118085645im_/http://www.sbs.com.au/nav/more_header2.gif" width="215"/></td>
+</tr>
+
+<script language="javascript" src="https://web.archive.org/web/20041118085645js_/http://www9.sbs.com.au/theworldnews/lib/ticker.js"></script>
+<table border="0" cellpadding="3" cellspacing="0" height="74" width="875">
+<tr>
+<td background="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/header.jpg" class="onair" height="74" valign="top" width="875">Wednesdays
+		at 8pm<br/>
+		Sundays at 11:55pm</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="755">
+<tr>
+<td background="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/left_under.jpg" valign="top" width="124">
+<!-- BEGIN RIGHT NAV -->
+<a href="index.php3"><img alt="" border="0" height="26" onmouseout="this.src='images/home_1.gif'" onmouseover="this.src='images/home_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/home_1.gif" width="124"/></a><br/>
+<br/>
+<a href="index.php3?action=features"><img alt="" border="0" height="24" onmouseout="this.src='images/features_1.gif'" onmouseover="this.src='images/features_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/features_1.gif" width="124"/></a><br/>
+<a href="index.php3?action=incinemas"><img alt="" border="0" height="24" onmouseout="this.src='images/cinemar_1.gif'" onmouseover="this.src='images/cinemar_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/cinemar_1.gif" width="124"/></a><br/>
+<a href="index.php3?action=dvd"><img alt="" border="0" height="24" onmouseout="this.src='images/dvdr_1.gif'" onmouseover="this.src='images/dvdr_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/dvdr_1.gif" width="124"/></a><br/>
+<a href="index.php3?action=interviews"><img alt="" border="0" height="24" onmouseout="this.src='images/interviews_1.gif'" onmouseover="this.src='images/interviews_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/interviews_1.gif" width="124"/></a><br/>
+<a href="https://web.archive.org/web/20041118085645/http://www8.sbs.com.au/sbsforum/viewforum.php?f=3" target="_new"><img alt="" border="0" height="26" onmouseout="this.src='images/forum_1.gif'" onmouseover="this.src='images/forum_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/forum_1.gif" width="124"/></a><br/>
+<br/>
+<a href="index.php3?action=presenters"><img alt="" border="0" height="24" onmouseout="this.src='images/presenters_1.gif'" onmouseover="this.src='images/presenters_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/presenters_1.gif" width="124"/></a><br/>
+<a href="index.php3?action=cinemalinks"><img alt="" border="0" height="24" onmouseout="this.src='images/cinemalinks_1.gif'" onmouseover="this.src='images/cinemalinks_2.gif'" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/cinemalinks_1.gif" width="124"/></a><br/>
+<!-- END RIGHT NAV --> <br/>
+<table border="0" cellpadding="3" cellspacing="0">
+<tr>
+<td class="related">RELATED SITES<br/>
+<a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/eatcarpet">eat carpet</a><br/>
+<a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/whatson">tv what's on</a></td>
+</tr><tr>
+<td class="multimedia">MULTIMEDIA REQUIRES<br/>
+<a href="https://web.archive.org/web/20041118085645/http://www.real.com.au/download_realplayer_sbs.html" target="_new"><img alt="" border="0" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/realone.gif"/></a></td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<!-- BEGIN CENTRE PANEL -->
+<table border="0" cellpadding="0" cellspacing="0" width="436">
+<tr>
+<td class="panel" colspan="3"><img alt="" border="0" height="25" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/h_review_archive.gif" width="436"/></td>
+</tr><tr>
+<td colspan="3" valign="top">
+<table border="0" cellpadding="3" cellspacing="0" width="436">
+<tr>
+<td class="panel" colspan="2">You searched the reviews archive for names beginning with <b>T</b></td>
+</tr><tr>
+<td class="panel" colspan="2"><a href="index.php3?action=review&amp;id=741">Tailor Of Panama, The</a><br/>
+<a href="index.php3?action=review&amp;id=1314">Tais Toi!</a><br/>
+<a href="index.php3?action=review&amp;id=1182">Take Away</a><br/>
+<a href="index.php3?action=review&amp;id=1317">Taking Lives</a><br/>
+<a href="index.php3?action=review&amp;id=993">Taking Sides</a><br/>
+<a href="index.php3?action=review&amp;id=552">Talented Mr Ripley, The</a><br/>
+<a href="index.php3?action=review&amp;id=1054">Talk To Her</a><br/>
+<a href="index.php3?action=review&amp;id=511">Tango</a><br/>
+<a href="index.php3?action=review&amp;id=553">Tango Lesson, The</a><br/>
+<a href="index.php3?action=review&amp;id=1081">Tape</a><br/>
+<a href="index.php3?action=review&amp;id=512">Tarzan</a><br/>
+<a href="index.php3?action=review&amp;id=788">Taste Of Others, The</a><br/>
+<a href="index.php3?action=review&amp;id=1472">Taxi</a><br/>
+<a href="index.php3?action=review&amp;id=515">Teaching Mrs Tingle</a><br/>
+<a href="index.php3?action=review&amp;id=1004">Tears Of The Black Tiger</a><br/>
+<a href="index.php3?action=review&amp;id=1181">Tears Of The Sun</a><br/>
+<a href="index.php3?action=review&amp;id=1196">Teesh And Trude</a><br/>
+<a href="index.php3?action=review&amp;id=1009">Tempted</a><br/>
+<a href="index.php3?action=review&amp;id=1228">Ten</a><br/>
+<a href="index.php3?action=review&amp;id=1411">Terminal, The</a><br/>
+<a href="index.php3?action=review&amp;id=1163">Terminator 3: Rise Of The Machines</a><br/>
+<a href="index.php3?action=review&amp;id=517">Terra Nova</a><br/>
+<a href="index.php3?action=review&amp;id=554">Terrorist, The</a><br/>
+<a href="index.php3?action=review&amp;id=519">Thank God He Met Lizzie</a><br/>
+<a href="index.php3?action=review&amp;id=736">The Animal</a><br/>
+<a href="index.php3?action=review&amp;id=781">The Anniversary Party </a><br/>
+<a href="index.php3?action=review&amp;id=1011">The Banger Sisters</a><br/>
+<a href="index.php3?action=review&amp;id=752">The Bank</a><br/>
+<a href="index.php3?action=review&amp;id=1308">The Barbarian Invasions</a><br/>
+<a href="index.php3?action=review&amp;id=1014">The Best Man's Wedding(Jalla!, Jalla!).</a><br/>
+<a href="index.php3?action=review&amp;id=1298">The Big Bounce</a><br/>
+<a href="index.php3?action=review&amp;id=1341">The Blues</a><br/>
+<a href="index.php3?action=review&amp;id=968">The Bourne Identity</a><br/>
+<a href="index.php3?action=review&amp;id=655">The Broken Hearts Club</a><br/>
+<a href="index.php3?action=review&amp;id=898">The Business Of Strangers</a><br/>
+<a href="index.php3?action=review&amp;id=1292">The Butterfly Effect</a><br/>
+<a href="index.php3?action=review&amp;id=1306">The Cat In The Hat</a><br/>
+<a href="index.php3?action=review&amp;id=962">The Cat`s Meow</a><br/>
+<a href="index.php3?action=review&amp;id=112">The Cider House Rules</a><br/>
+<a href="index.php3?action=review&amp;id=849">The Circle</a><br/>
+<a href="index.php3?action=review&amp;id=1347">The Company</a><br/>
+<a href="index.php3?action=review&amp;id=646">The Contender</a><br/>
+<a href="index.php3?action=review&amp;id=941">The Conversation</a><br/>
+<a href="index.php3?action=review&amp;id=1343">The Cooler</a><br/>
+<a href="index.php3?action=review&amp;id=1136">The Core</a><br/>
+<a href="index.php3?action=review&amp;id=883">The Count Of Monte Cristo</a><br/>
+<a href="index.php3?action=review&amp;id=1388">The Cremaster Cycle</a><br/>
+<a href="index.php3?action=review&amp;id=1119">The Crime Of Father Amaro</a><br/>
+<a href="index.php3?action=review&amp;id=719">The Crimson Rivers</a><br/>
+<a href="index.php3?action=review&amp;id=864">The Curse Of The Jade Scorpion</a><br/>
+<a href="index.php3?action=review&amp;id=1149">The Dancer Upstairs</a><br/>
+<a href="index.php3?action=review&amp;id=893">The Day Neil Armstrong Walked On The Moon</a><br/>
+<a href="index.php3?action=review&amp;id=894">The Devil`s Backbone</a><br/>
+<a href="index.php3?action=review&amp;id=881">The Diaries Of Vaslav Nijinsky</a><br/>
+<a href="index.php3?action=review&amp;id=1360">The Draughtsman's Contract</a><br/>
+<a href="index.php3?action=review&amp;id=1337">The Dreamers</a><br/>
+<a href="index.php3?action=review&amp;id=1080">The Emperor's Club</a><br/>
+<a href="index.php3?action=review&amp;id=662">The Emperor`s New Groove</a><br/>
+<a href="index.php3?action=review&amp;id=649">The Exorcist</a><br/>
+<a href="index.php3?action=review&amp;id=1024">The Experiment</a><br/>
+<a href="index.php3?action=review&amp;id=758">The Fast And The Furious</a><br/>
+<a href="index.php3?action=review&amp;id=1288">The Fighting Temptations</a><br/>
+<a href="index.php3?action=review&amp;id=1220">The Finished People</a><br/>
+<a href="index.php3?action=review&amp;id=1297">The Fog Of War</a><br/>
+<a href="index.php3?action=review&amp;id=1132">The Four Feathers</a><br/>
+<a href="index.php3?action=review&amp;id=653">The Gift</a><br/>
+<a href="index.php3?action=review&amp;id=932">The Gleaners And I</a><br/>
+<a href="index.php3?action=review&amp;id=682">The Goddess Of 1967</a><br/>
+<a href="index.php3?action=review&amp;id=1106">The Good Girl</a><br/>
+<a href="index.php3?action=review&amp;id=1156">The Good Thief</a><br/>
+<a href="index.php3?action=review&amp;id=1006">The Guru</a><br/>
+<a href="index.php3?action=review&amp;id=905">The Hard Word</a><br/>
+<a href="index.php3?action=review&amp;id=1303">The Hebrew Hammer</a><br/>
+<a href="index.php3?action=review&amp;id=1237">The Honourable Wally Norman</a><br/>
+<a href="index.php3?action=review&amp;id=1056">The Hours</a><br/>
+<a href="index.php3?action=review&amp;id=712">The House Of Mirth</a><br/>
+<a href="index.php3?action=review&amp;id=1260">The Housekeeper</a><br/>
+<a href="index.php3?action=review&amp;id=1286">The Human Stain</a><br/>
+<a href="index.php3?action=review&amp;id=920">The Importance Of Being Earnest</a><br/>
+<a href="index.php3?action=review&amp;id=1184">The Inside Story</a><br/>
+<a href="index.php3?action=review&amp;id=518">The Iron Ladies</a><br/>
+<a href="index.php3?action=review&amp;id=1180">The Italian Job</a><br/>
+<a href="index.php3?action=review&amp;id=1061">The Kid Stays In The Picture</a><br/>
+<a href="index.php3?action=review&amp;id=730">The Ladies Man</a><br/>
+<a href="index.php3?action=review&amp;id=1407">The Ladykilllers</a><br/>
+<a href="index.php3?action=review&amp;id=878">The Last Kiss</a><br/>
+<a href="index.php3?action=review&amp;id=939">The Last Waltz</a><br/>
+<a href="index.php3?action=review&amp;id=1204">The League Of Extraordinary Gentlemen</a><br/>
+<a href="index.php3?action=review&amp;id=1253">The Leopard</a><br/>
+<a href="index.php3?action=review&amp;id=1124">The Life Of David Gale</a><br/>
+<a href="index.php3?action=review&amp;id=688">The Limey</a><br/>
+<a href="index.php3?action=review&amp;id=1145">The Lizzie McGuire Movie</a><br/>
+<a href="index.php3?action=review&amp;id=1393">The Lord of the Rings Box Set</a><br/>
+<a href="index.php3?action=review&amp;id=824">The Lord Of The Rings: The Fellowship Of The Ring</a><br/>
+<a href="index.php3?action=review&amp;id=1104">The Magdalene Sisters</a><br/>
+<a href="index.php3?action=review&amp;id=895">The Majestic</a><br/>
+<a href="index.php3?action=review&amp;id=1048">The Man From Elysian Fields</a><br/>
+<a href="index.php3?action=review&amp;id=1188">The Man On The Train</a><br/>
+<a href="index.php3?action=review&amp;id=686">The Man Who Cried</a><br/>
+<a href="index.php3?action=review&amp;id=783">The Man Who Sued God</a><br/>
+<a href="index.php3?action=review&amp;id=819">The Man Who Wasn`t There</a><br/>
+<a href="index.php3?action=review&amp;id=1076">The Man Without A Past</a><br/>
+<a href="index.php3?action=review&amp;id=1129">The Matrix: Reloaded</a><br/>
+<a href="index.php3?action=review&amp;id=1239">The Matrix: Revolutions</a><br/>
+<a href="index.php3?action=review&amp;id=679">The Mexican</a><br/>
+<a href="index.php3?action=review&amp;id=1285">The Missing</a><br/>
+<a href="index.php3?action=review&amp;id=998">The Missing Gun</a><br/>
+<a href="index.php3?action=review&amp;id=689">The Monkey`s Mask</a><br/>
+<a href="index.php3?action=review&amp;id=1356">The Mother</a><br/>
+<a href="index.php3?action=review&amp;id=901">The Mothman Prophecies</a><br/>
+<a href="index.php3?action=review&amp;id=687">The Mummy Returns</a><br/>
+<a href="index.php3?action=review&amp;id=855">The Musketeer</a><br/>
+<a href="index.php3?action=review&amp;id=935">The Navigators</a><br/>
+<a href="index.php3?action=review&amp;id=1468">The Nick Broomfield Collection: Adventures in the Sex Trade</a><br/>
+<a href="index.php3?action=review&amp;id=1467">The Nick Broomfield Collection: The Chase</a><br/>
+<a href="index.php3?action=review&amp;id=1176">The Night We Called It A Day</a><br/>
+<a href="index.php3?action=review&amp;id=982">The Nugget</a><br/>
+<a href="index.php3?action=review&amp;id=1293">The Old Man Who Read Love Stories</a><br/>
+<a href="index.php3?action=review&amp;id=789">The Others</a><br/>
+<a href="index.php3?action=review&amp;id=1280">The Passion Of The Christ</a><br/>
+<a href="index.php3?action=review&amp;id=1068">The Pianist</a><br/>
+<a href="index.php3?action=review&amp;id=921">The Piano Teacher</a><br/>
+<a href="index.php3?action=review&amp;id=734">The Pledge</a><br/>
+<a href="index.php3?action=review&amp;id=759">The Princess Diaries</a><br/>
+<a href="index.php3?action=review&amp;id=1039">The Quiet American</a><br/>
+<a href="index.php3?action=review&amp;id=1186">The Rage In Placid Lake</a><br/>
+<a href="index.php3?action=review&amp;id=1161">The Real Cancun</a><br/>
+<a href="index.php3?action=review&amp;id=1064">The Recruit</a><br/>
+<a href="index.php3?action=review&amp;id=1213">The Red Circle</a><br/>
+<a href="index.php3?action=review&amp;id=1005">The Ring</a><br/>
+<a href="index.php3?action=review&amp;id=1088">The Rookie</a><br/>
+<a href="index.php3?action=review&amp;id=858">The Royal Tenenbaums</a><br/>
+<a href="index.php3?action=review&amp;id=1058">The Rules Of Attraction</a><br/>
+<a href="index.php3?action=review&amp;id=1409">The Rutles</a><br/>
+<a href="index.php3?action=review&amp;id=1131">The Safety Of Objects</a><br/>
+<a href="index.php3?action=review&amp;id=882">The Scorpion King</a><br/>
+<a href="index.php3?action=review&amp;id=1281">The Sin Eater</a><br/>
+<a href="index.php3?action=review&amp;id=859">The Son`s Room</a><br/>
+<a href="index.php3?action=review&amp;id=1255">The Spanish Apartment</a><br/>
+<a href="index.php3?action=review&amp;id=1447">The Station Agent</a><br/>
+<a href="index.php3?action=review&amp;id=950">The Sum Of All Fears</a><br/>
+<a href="index.php3?action=review&amp;id=930">The Sweetest Thing</a><br/>
+<a href="index.php3?action=review&amp;id=1249">The Texas Chainsaw Massacre</a><br/>
+<a href="index.php3?action=review&amp;id=936">The Tracker</a><br/>
+<a href="index.php3?action=review&amp;id=1340">The Triplets of Belleville</a><br/>
+<a href="index.php3?action=review&amp;id=1073">The Truth About Charlie</a><br/>
+<a href="index.php3?action=review&amp;id=761">The Vertical Ray Of The Sun</a><br/>
+<a href="index.php3?action=review&amp;id=1206">The Wannabes</a><br/>
+<a href="index.php3?action=review&amp;id=40">The Watcher</a><br/>
+<a href="index.php3?action=review&amp;id=695">The Way Of The Gun</a><br/>
+<a href="index.php3?action=review&amp;id=1208">The Weather Underground</a><br/>
+<a href="index.php3?action=review&amp;id=650">The Wedding Planner</a><br/>
+<a href="index.php3?action=review&amp;id=685">The Yards</a><br/>
+<a href="index.php3?action=review&amp;id=1318">The Young Black Stallion</a><br/>
+<a href="index.php3?action=review&amp;id=808">There`s Only One Jimmy Grimble</a><br/>
+<a href="index.php3?action=review&amp;id=567">There`s Something About Mary</a><br/>
+<a href="index.php3?action=review&amp;id=555">Thief, The</a><br/>
+<a href="index.php3?action=review&amp;id=559">Thin Red Line, The</a><br/>
+<a href="index.php3?action=review&amp;id=821">Thir13en Ghosts</a><br/>
+<a href="index.php3?action=review&amp;id=556">Third Man, The</a><br/>
+<a href="index.php3?action=review&amp;id=1291">Thirteen</a><br/>
+<a href="index.php3?action=review&amp;id=684">Thirteen Days</a><br/>
+<a href="index.php3?action=review&amp;id=557">Thirteenth Floor, The</a><br/>
+<a href="index.php3?action=review&amp;id=520">Thomas and the Magic Railroad</a><br/>
+<a href="index.php3?action=review&amp;id=560">Thomas Crown Affair, The</a><br/>
+<a href="index.php3?action=review&amp;id=13">Thousand Acres, A </a><br/>
+<a href="index.php3?action=review&amp;id=568">Three Kings</a><br/>
+<a href="index.php3?action=review&amp;id=569">Three Seasons</a><br/>
+<a href="index.php3?action=review&amp;id=570">Three to Tango</a><br/>
+<a href="index.php3?action=review&amp;id=1421">Thunderbirds 6</a><br/>
+<a href="index.php3?action=review&amp;id=1420">Thunderbirds Are Go!</a><br/>
+<a href="index.php3?action=review&amp;id=1029">Thunderpants</a><br/>
+<a href="index.php3?action=review&amp;id=1344">Thunderstruck</a><br/>
+<a href="index.php3?action=review&amp;id=773">Tigerland</a><br/>
+<a href="index.php3?action=review&amp;id=964">Till Human Voices Wake Us</a><br/>
+<a href="index.php3?action=review&amp;id=790">Time And Tide</a><br/>
+<a href="index.php3?action=review&amp;id=572">Time Code</a><br/>
+<a href="index.php3?action=review&amp;id=984">Time Out</a><br/>
+<a href="index.php3?action=review&amp;id=573">Titanic</a><br/>
+<a href="index.php3?action=review&amp;id=574">Titus</a><br/>
+<a href="index.php3?action=review&amp;id=1334">To Be and To Have</a><br/>
+<a href="index.php3?action=review&amp;id=914">Together</a><br/>
+<a href="index.php3?action=review&amp;id=1198">Together</a><br/>
+<a href="index.php3?action=review&amp;id=1446">Tokyo Godfathers</a><br/>
+<a href="index.php3?action=review&amp;id=1394">Tom White</a><br/>
+<a href="index.php3?action=review&amp;id=681">Tomcats</a><br/>
+<a href="index.php3?action=review&amp;id=1408">Tommy</a><br/>
+<a href="index.php3?action=review&amp;id=575">Tomorrow Never Dies</a><br/>
+<a href="index.php3?action=review&amp;id=576">Topless Women Talk About Their Lives</a><br/>
+<a href="index.php3?action=review&amp;id=577">Topsy Turvy</a><br/>
+<a href="index.php3?action=review&amp;id=578">Touch of Evil</a><br/>
+<a href="index.php3?action=review&amp;id=1427">Touch of Spice, A</a><br/>
+<a href="index.php3?action=review&amp;id=1351">Touching the Void</a><br/>
+<a href="index.php3?action=review&amp;id=579">Toy Story 2</a><br/>
+<a href="index.php3?action=review&amp;id=39">Traffic</a><br/>
+<a href="index.php3?action=review&amp;id=580">Train of Life</a><br/>
+<a href="index.php3?action=review&amp;id=793">Training Day</a><br/>
+<a href="index.php3?action=review&amp;id=1141">Travelling Birds</a><br/>
+<a href="index.php3?action=review&amp;id=1197">Travelling Light</a><br/>
+<a href="index.php3?action=review&amp;id=581">Trees Lounge</a><br/>
+<a href="index.php3?action=review&amp;id=582">Trick</a><br/>
+<a href="index.php3?action=review&amp;id=975">Triumph Of Love</a><br/>
+<a href="index.php3?action=review&amp;id=561">Truce, The</a><br/>
+<a href="index.php3?action=review&amp;id=583">True Crime</a><br/>
+<a href="index.php3?action=review&amp;id=562">Truman Show, The</a><br/>
+<a href="index.php3?action=review&amp;id=1089">Tuck Everlasting</a><br/>
+<a href="index.php3?action=review&amp;id=585">Tumble Weeds</a><br/>
+<a href="index.php3?action=review&amp;id=1372">Twelve Angry Men</a><br/>
+<a href="index.php3?action=review&amp;id=586">Twenty-Four Seven</a><br/>
+<a href="index.php3?action=review&amp;id=587">Twilight</a><br/>
+<a href="index.php3?action=review&amp;id=588">Twin Falls Idaho</a><br/>
+<a href="index.php3?action=review&amp;id=1345">Twisted</a><br/>
+<a href="index.php3?action=review&amp;id=589">Two Days in the Valley</a><br/>
+<a href="index.php3?action=review&amp;id=593">Two Girls and a Guy</a><br/>
+<a href="index.php3?action=review&amp;id=590">Two Hands</a><br/>
+<a href="index.php3?action=review&amp;id=1040">Two Weeks Notice</a><br/>
+</td>
+</tr><tr>
+<td class="panel" colspan="2"><hr class="hr"/></td>
+</tr><tr>
+<td class="panel" colspan="2">browse the review archive alphabetically<br/>
+<map name="alphabet">
+<area alt="" coords="0,0,18,19" href="index.php3?action=browseReview&amp;letter=a"/>
+<area alt="" coords="18,0,35,19" href="index.php3?action=browseReview&amp;letter=b"/>
+<area alt="" coords="35,19,51,0" href="index.php3?action=browseReview&amp;letter=c"/>
+<area alt="" coords="52,21,67,0" href="index.php3?action=browseReview&amp;letter=d"/>
+<area alt="" coords="67,21,83,0" href="index.php3?action=browseReview&amp;letter=e"/>
+<area alt="" coords="83,19,99,0" href="index.php3?action=browseReview&amp;letter=f"/>
+<area alt="" coords="100,19,114,0" href="index.php3?action=browseReview&amp;letter=g"/>
+<area alt="" coords="114,0,131,21" href="index.php3?action=browseReview&amp;letter=h"/>
+<area alt="" coords="131,0,145,19" href="index.php3?action=browseReview&amp;letter=i"/>
+<area alt="" coords="145,19,160,0" href="index.php3?action=browseReview&amp;letter=j"/>
+<area alt="" coords="160,21,174,0" href="index.php3?action=browseReview&amp;letter=k"/>
+<area alt="" coords="175,22,189,0" href="index.php3?action=browseReview&amp;letter=l"/>
+<area alt="" coords="191,25,210,0" href="index.php3?action=browseReview&amp;letter=m"/>
+<area alt="" coords="210,20,227,0" href="index.php3?action=browseReview&amp;letter=n"/>
+<area alt="" coords="225,24,244,0" href="index.php3?action=browseReview&amp;letter=o"/>
+<area alt="" coords="243,24,260,0" href="index.php3?action=browseReview&amp;letter=p"/>
+<area alt="" coords="261,23,277,0" href="index.php3?action=browseReview&amp;letter=q"/>
+<area alt="" coords="278,0,295,19" href="index.php3?action=browseReview&amp;letter=r"/>
+<area alt="" coords="294,19,310,0" href="index.php3?action=browseReview&amp;letter=s"/>
+<area alt="" coords="310,20,326,0" href="index.php3?action=browseReview&amp;letter=t"/>
+<area alt="" coords="325,26,343,0" href="index.php3?action=browseReview&amp;letter=u"/>
+<area alt="" coords="359,0,343,19" href="index.php3?action=browseReview&amp;letter=v"/>
+<area alt="" coords="378,0,359,20" href="index.php3?action=browseReview&amp;letter=w"/>
+<area alt="" coords="378,19,394,0" href="index.php3?action=browseReview&amp;letter=x"/>
+<area alt="" coords="394,0,411,20" href="index.php3?action=browseReview&amp;letter=y"/>
+<area alt="" coords="410,0,432,22" href="index.php3?action=browseReview&amp;letter=z"/>
+</map><img alt="" border="0" height="19" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/alphabet.gif" usemap="#alphabet" width="428"/>
+</td>
+</tr>
+</table>
+</td>
+</tr><tr>
+<td class="panel" colspan="3"><img alt="" border="0" height="8" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/cellbottom.gif" width="436"/></td>
+</tr><tr>
+<td colspan="3"><img alt="" border="0" height="8" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/spacer.gif" width="436"/></td>
+</tr>
+</table>
+<!-- END CENTRE PANEL -->
+</td>
+<td valign="top">
+<!-- BEGIN LEFT COLUMN -->
+<img alt="" border="0" height="20" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/search.jpg" width="192"/><br/>
+<table border="0" cellpadding="2" cellspacing="0" class="search" width="192">
+<form action="https://web.archive.org/web/20041118085645/http://203.15.102.129/NSearch/SearchServlet" method="get" name="AdvSearchForm" onsubmit="javascript:return doQuery(this, true);">
+<input name="site" type="HIDDEN" value="movieshow"/>
+<input name="encoding" type="HIDDEN" value="UTF-8"/>
+<tr>
+<td class="search"><input class="textinput" name="query0" size="20" type="text" value=""/></td>
+<td class="search"><input name="Submit" type="submit" value="go"/></td>
+</tr>
+<input name="operator0" type="hidden" value=""/>
+<input name="template" type="hidden" value=""/>
+<input name="dates" type="hidden" value=""/>
+<input name="numhits" type="hidden" value="25"/>
+<input name="" type="Hidden"/>
+<input name="" type="hidden"/>
+</form>
+</table>
+<img alt="" border="0" height="8" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/search_bottom.jpg" width="192"/><br/>
+<br/>
+<a href="#" onclick="window.open('about.html','about','top=20,left=20,height=400,width=500,scrollbars=yes')"><img alt="" border="0" height="48" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/about.jpg" width="192"/></a><br/>
+<br/>
+<img alt="" border="0" height="20" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/boxoffice.gif" width="192"/><br/>
+<table border="0" cellpadding="1" cellspacing="0" class="search" width="192">
+<tr class="boxoffice1">
+<td class="boxearn" colspan="2" valign="top">  week ending 2004-11-17</td>
+<td class="boxearn">box office<br/>
+					earnings</td>
+</tr><tr class="boxoffice2">
+<td valign="top">1.</td>
+<td height="20" valign="top">BRIDGET JONES: THE EDGE OF REASON</td>
+<td class="boxearn" valign="top">5,588,705</td>
+</tr><tr class="boxoffice1">
+<td valign="top">2.</td>
+<td height="20" valign="top">TAXI</td>
+<td class="boxearn" valign="top">1,015,347</td>
+</tr><tr class="boxoffice2">
+<td valign="top">3.</td>
+<td height="20" valign="top">HERO</td>
+<td class="boxearn" valign="top">963,456</td>
+</tr><tr class="boxoffice1">
+<td valign="top">4.</td>
+<td height="20" valign="top">THE FORGOTTEN</td>
+<td class="boxearn" valign="top">717,797</td>
+</tr><tr class="boxoffice2">
+<td valign="top">5.</td>
+<td height="20" valign="top">SHALL WE DANCE</td>
+<td class="boxearn" valign="top">709,339</td>
+</tr><tr class="boxoffice1">
+<td valign="top"> </td>
+<td class="boxearn" colspan="2" valign="top">Source:MPDAA</td>
+</tr>
+</table>
+<img alt="" border="0" height="7" src="/web/20041118085645im_/http://www.sbs.com.au/movieshow/images/boxoffice_bottom.gif" width="192"/><br/>
+<br/>
+<!-- END LEFT COLUMN -->
+</td>
+</tr><tr>
+<td> </td>
+<td align="center"><br/>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" class="footer">
+<a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate">About SBS</a>  |  <!-- <a href="">Help</a>  |--><a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate/index.html?id=369">Feedback</a><br/>
+<a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate/index.html?id=400">© 2002 Special Broadcasting Service</a><br/>
+<a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate/index.html?id=399">Terms and Conditions</a>  |  <a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate/index.html?id=402">Privacy</a>  |  <a href="https://web.archive.org/web/20041118085645/http://www.sbs.com.au/sbscorporate/index.html?id=403">Disclaimer</a></td>
+</tr>
+</table>
+</td>
+<td> </td>
+</tr>
+</table>
+<br/>
+<br/>
+<!-- STARTRedMeasureV4-Java v1.1  Revision: 1.8-->
+<!--COPYRIGHT 2000 Red Sheriff Limited-->
+<script language="JavaScript"><!--
+var pCid="au_sbs_0";
+var w0=1;
+var refR=escape(document.referrer);
+if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//--></script>
+<script language="JavaScript1.1"><!--
+var w0=0;
+//--></script>
+<script language="JavaScript1.1" src="https://web.archive.org/web/20041118085645js_/http://server-au.imrworldwide.com/a1.js">
+</script>
+<script language="JavaScript"><!--
+if(w0){
+var imgN='<img src="https://web.archive.org/web/20041118085645/http://server-au.imrworldwide.com/cgi-bin/count?ref='+
+	refR+'&cid='+pCid+'" width=1 height=1>';
+if(navigator.userAgent.indexOf('Mac')!=-1){document.write(imgN);
+}else{
+	document.write('<applet code="Measure.class" '+
+	'codebase="https://web.archive.org/web/20041118085645/http://server-au.imrworldwide.com/"'+'width=1 height=2>'+
+	'<param name="ref" value="'+refR+'">'+'<param name="cid" value="'+pCid+
+	'"><textflow>'+imgN+'</textflow></applet>');
+	}
+}
+document.write("<COMMENT>");
+//-->
+</script>
+<noscript>
+</noscript>
+
+<!--
+     FILE ARCHIVED ON 08:56:45 Nov 18, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:35:37 Oct 18, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 22.57 (3)
+  RedisCDXSource: 3.269
+  load_resource: 158.272
+  LoadShardBlock: 432.592 (3)
+  PetaboxLoader3.datanode: 501.113 (4)
+  exclusion.robots: 0.139
+  esindex: 0.01
+  exclusion.robots.policy: 0.13
+  PetaboxLoader3.resolve: 72.143
+  captures_list: 462.619
+-->
