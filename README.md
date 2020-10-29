@@ -1,6 +1,6 @@
-# Margaret and David
+# Margaret and David vs IMDB
 
-Extracts of Margaret and David film ratings from 1986 to 2014 from SBS and ABC wayback captures.
+Margaret and David film ratings from 1997 to 2013, extracted from SBS and ABC wayback captures.
 Ratings matched to IMDB identifiers via fuzzy string matching.
 
 #### Margaret and David rate higher than IMDB.
